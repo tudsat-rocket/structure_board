@@ -28,15 +28,16 @@
 		(29 "B.CrtYd" user "B.Courtyard")
 		(35 "F.Fab" user)
 		(33 "B.Fab" user)
-		(39 "User.1" user)
-		(41 "User.2" user)
-		(43 "User.3" user)
-		(45 "User.4" user)
-		(47 "User.5" user)
-		(49 "User.6" user)
+		(39 "User.1" user "Mountingstructureboard")
+		(41 "User.2" user "Powerboard")
+		(43 "User.3" user "FlightComputer")
+		(45 "User.4" user "Vega")
+		(47 "User.5" user "Armingboard")
+		(49 "User.6" user "Engineboard")
 		(51 "User.7" user)
 		(53 "User.8" user)
 		(55 "User.9" user)
+		(57 "User.10" user "Switch")
 	)
 	(setup
 		(stackup
@@ -136,14 +137,14 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "F.Cu")
 		(uuid "07c6dc98-5094-4a75-8209-5377d1b03c07")
-		(at 127.7 127.25)
+		(at 115.7 134.4)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H1"
 			(at 0.025 0.025 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "77e38185-08f4-4aba-a24c-adcb7c46b509")
+			(uuid "11228274-858c-4e9f-bc08-35ea068c4b0c")
 			(effects
 				(font
 					(size 1 1)
@@ -155,7 +156,7 @@
 			(at 0 4.65 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "55996e54-36e6-458e-bda3-2894b97ff7c6")
+			(uuid "d56a6ebb-c94a-4b51-bb07-9ad87739f72f")
 			(effects
 				(font
 					(size 1 1)
@@ -167,7 +168,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bec01944-9450-4468-a563-bf94a34ff6cf")
+			(uuid "98e3c84c-ca5e-4528-834d-461fd2f16a8f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -179,7 +180,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ac6d6f77-b59d-477b-bc37-809a2bd7f228")
+			(uuid "c0938040-5f76-402c-9ef0-9523edd43912")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -221,8 +222,8 @@
 			(layer "F.Fab")
 			(uuid "e4b44152-4248-4efd-893d-5aabf6397c81")
 		)
-		(fp_text user "Batteryboard"
-			(at 0.305196 -5.794804 0)
+		(fp_text user "Powerboard"
+			(at 8.65 -0.1 0)
 			(layer "B.SilkS")
 			(uuid "a49e20b0-45f7-4092-807d-934e2cf118d6")
 			(effects
@@ -728,11 +729,11 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "F.Cu")
 		(uuid "13db7d82-5b82-4ac8-aa19-3cd7af00a855")
-		(at 59.525 65.2375)
+		(at 58.1 87.6 90)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://www.we-online.com/components/products/datasheet/9775046960R.pdf)")
 		(tags "Mounting 3.2mm 9775046960")
-		(property "Reference" "ArmingBoard"
-			(at 1.1 5.175 0)
+		(property "Reference" "H20"
+			(at 1.1 5.175 90)
 			(layer "B.SilkS")
 			(uuid "46b7e35d-43de-4148-a216-fb6a6c69214d")
 			(effects
@@ -744,7 +745,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 4.65 0)
+			(at 0 4.65 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2e6a3915-89eb-4ca6-821a-bfcc1022a280")
@@ -756,7 +757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "819d9fa3-1cb7-4e3d-af05-56d31cc5939b")
@@ -767,7 +768,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c3f95d2c-2850-45a0-83df-4d697573a073")
@@ -778,7 +779,7 @@
 			)
 		)
 		(property "KiLib_Generator" "mounting_hardware/Wuerth_SMT_spacer"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "94194de1-c189-498c-97c5-9e6f0f43a47e")
@@ -824,7 +825,7 @@
 			(uuid "5e9ce0f9-96b2-497c-b41d-80a43726d733")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "02d9cb73-f4ab-44cc-bfec-2d752e40ec21")
 			(effects
@@ -835,7 +836,7 @@
 			)
 		)
 		(pad "" smd custom
-			(at -2.094804 -2.094804)
+			(at -2.094804 -2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -941,7 +942,7 @@
 			(uuid "628816cd-200c-4a7f-995c-0e943c1d4203")
 		)
 		(pad "" smd custom
-			(at -2.094804 2.094804)
+			(at -2.094804 2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -1047,14 +1048,14 @@
 			(uuid "8c1664fa-65c4-4d85-b201-86532fe8dfff")
 		)
 		(pad "" np_thru_hole circle
-			(at 0 0)
+			(at 0 0 90)
 			(size 4.4 4.4)
 			(drill 4.4)
 			(layers "*.Cu" "*.Mask")
 			(uuid "a2f64c6e-839d-4f64-984b-2800719bdc63")
 		)
 		(pad "" smd custom
-			(at 2.094804 -2.094804)
+			(at 2.094804 -2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -1160,7 +1161,7 @@
 			(uuid "237cf2c9-2fc2-46e0-944d-0a1b62b3085e")
 		)
 		(pad "" smd custom
-			(at 2.094804 2.094804)
+			(at 2.094804 2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -1266,7 +1267,7 @@
 			(uuid "3c5245c0-2592-4e78-ba67-855478115131")
 		)
 		(pad "1" smd circle
-			(at -2.975 0)
+			(at -2.975 0 90)
 			(size 0.942 0.942)
 			(layers "F.Cu")
 			(net "unconnected-(H20-Pad1)_3")
@@ -1275,7 +1276,7 @@
 			(uuid "df618d46-9c6a-4423-9259-1a982090340c")
 		)
 		(pad "1" smd circle
-			(at 0 -2.975)
+			(at 0 -2.975 90)
 			(size 0.942 0.942)
 			(layers "F.Cu")
 			(net "unconnected-(H20-Pad1)")
@@ -1284,7 +1285,7 @@
 			(uuid "0fc3d65d-53b9-46cf-b36c-ed25995ce41b")
 		)
 		(pad "1" smd circle
-			(at 0 2.975)
+			(at 0 2.975 90)
 			(size 0.942 0.942)
 			(layers "F.Cu")
 			(net "unconnected-(H20-Pad1)_1")
@@ -1293,7 +1294,7 @@
 			(uuid "227d12a1-2ff3-4438-a284-6e9d07e06c8a")
 		)
 		(pad "1" smd custom
-			(at 2.975 0)
+			(at 2.975 0 90)
 			(size 1.45 1.45)
 			(layers "F.Cu" "F.Mask")
 			(net "unconnected-(H20-Pad1)_2")
@@ -1329,14 +1330,14 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "F.Cu")
 		(uuid "1730e62c-4ba9-4765-8edf-ada7c38d832a")
-		(at 207.7 127.25)
+		(at 195.7 134.4)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H4"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "a17c6cf9-f3e9-4563-a484-ec744e467f68")
+			(uuid "c47ee2c6-0bf5-4cd1-99f2-46f0356b855e")
 			(effects
 				(font
 					(size 1 1)
@@ -1348,7 +1349,7 @@
 			(at 0 4.65 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3d2e9353-afc7-469c-8a96-1dbd0bb165b6")
+			(uuid "f2c48b37-23c1-45d3-ba21-08a0bc54653b")
 			(effects
 				(font
 					(size 1 1)
@@ -1360,7 +1361,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f825b692-c556-46f4-9b13-3dd25489debd")
+			(uuid "7b5d8366-9e53-4fd2-af03-0550e1895f95")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1372,7 +1373,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8c6a82ad-2775-4d1c-8aac-a75aac4fc4bc")
+			(uuid "67883fa8-55fa-46af-ad7c-54e913f02ff3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2032,6 +2033,607 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
+		(layer "F.Cu")
+		(uuid "2f15fe5b-2fd6-4672-8286-11806a8adac4")
+		(at 90.1 58.6 90)
+		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://www.we-online.com/components/products/datasheet/9775046960R.pdf)")
+		(tags "Mounting 3.2mm 9775046960")
+		(property "Reference" "H23"
+			(at 0 -4.65 90)
+			(layer "B.SilkS")
+			(uuid "f215a1da-bf2c-4543-8a67-c96292936313")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 0 4.65 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fda951e-3ab3-4bed-a691-280bbd860c96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5fcf2a1-5097-48a2-a7ac-ce848df4036b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4be817a-7c61-4abb-b072-ba926e3b2fdd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "mounting_hardware/Wuerth_SMT_spacer"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7e5c7dae-bfd2-4b03-b525-1108d16b8c5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*Pad*")
+		(path "/aeb5e7e2-f4a8-4621-af1f-d6aa31ac93a5")
+		(sheetname "/")
+		(sheetfile "Structure_PCB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr smd exclude_from_bom allow_soldermask_bridges)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 3.95 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "31fe9a82-9659-4322-813e-5783c4d4ff90")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "fac528c2-b4f3-4214-a28f-d4a3af86f929")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "407dac5d-a123-4379-bce0-0063171d4798")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" smd custom
+			(at -2.094804 -2.094804 90)
+			(size 0.6725 0.6725)
+			(layers "F.Paste")
+			(options
+				(clearance outline)
+				(anchor circle)
+			)
+			(primitives
+				(gr_arc
+					(start -0.24231 1.594804)
+					(mid 0.404819 0.404819)
+					(end 1.594804 -0.24231)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -0.3398 1.594804)
+					(mid 0.337349 0.337349)
+					(end 1.594804 -0.3398)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -0.437132 1.594804)
+					(mid 0.269879 0.269879)
+					(end 1.594804 -0.437132)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -0.534324 1.594804)
+					(mid 0.202409 0.202409)
+					(end 1.594804 -0.534324)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -0.631391 1.594804)
+					(mid 0.13494 0.13494)
+					(end 1.594804 -0.631391)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -0.728345 1.594804)
+					(mid 0.06747 0.06747)
+					(end 1.594804 -0.728345)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -0.825197 1.594804)
+					(mid 0 0)
+					(end 1.594804 -0.825197)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -0.921958 1.594804)
+					(mid -0.06747 -0.06747)
+					(end 1.594804 -0.921958)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.018637 1.594804)
+					(mid -0.13494 -0.13494)
+					(end 1.594804 -1.018637)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.115239 1.594804)
+					(mid -0.202409 -0.202409)
+					(end 1.594804 -1.115239)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.211773 1.594804)
+					(mid -0.269879 -0.269879)
+					(end 1.594804 -1.211773)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.308244 1.594804)
+					(mid -0.337349 -0.337349)
+					(end 1.594804 -1.308244)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.404657 1.594804)
+					(mid -0.404819 -0.404819)
+					(end 1.594804 -1.404657)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.404657 1.594804)
+					(mid -0.404819 -0.404819)
+					(end 1.594804 -1.404657)
+					(width 0.2)
+				)
+				(gr_line
+					(start 1.594804 -0.24231)
+					(end 1.594804 -1.404657)
+					(width 0.2)
+				)
+				(gr_line
+					(start -0.24231 1.594804)
+					(end -1.404657 1.594804)
+					(width 0.2)
+				)
+			)
+			(uuid "5ee07435-4160-42cc-9425-4fae5fe55fef")
+		)
+		(pad "" smd custom
+			(at -2.094804 2.094804 90)
+			(size 0.6725 0.6725)
+			(layers "F.Paste")
+			(options
+				(clearance outline)
+				(anchor circle)
+			)
+			(primitives
+				(gr_arc
+					(start 1.594804 0.24231)
+					(mid 0.404819 -0.404819)
+					(end -0.24231 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 0.3398)
+					(mid 0.337349 -0.337349)
+					(end -0.3398 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 0.437132)
+					(mid 0.269879 -0.269879)
+					(end -0.437132 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 0.534324)
+					(mid 0.202409 -0.202409)
+					(end -0.534324 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 0.631391)
+					(mid 0.13494 -0.13494)
+					(end -0.631391 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 0.728345)
+					(mid 0.06747 -0.06747)
+					(end -0.728345 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 0.825197)
+					(mid 0 0)
+					(end -0.825197 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 0.921958)
+					(mid -0.06747 0.06747)
+					(end -0.921958 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 1.018637)
+					(mid -0.13494 0.13494)
+					(end -1.018637 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 1.115239)
+					(mid -0.202409 0.202409)
+					(end -1.115239 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 1.211773)
+					(mid -0.269879 0.269879)
+					(end -1.211773 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 1.308244)
+					(mid -0.337349 0.337349)
+					(end -1.308244 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 1.404657)
+					(mid -0.404819 0.404819)
+					(end -1.404657 -1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.594804 1.404657)
+					(mid -0.404819 0.404819)
+					(end -1.404657 -1.594804)
+					(width 0.2)
+				)
+				(gr_line
+					(start -0.24231 -1.594804)
+					(end -1.404657 -1.594804)
+					(width 0.2)
+				)
+				(gr_line
+					(start 1.594804 0.24231)
+					(end 1.594804 1.404657)
+					(width 0.2)
+				)
+			)
+			(uuid "64c879c3-9060-453f-9fd1-2a92d757c9b9")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0 90)
+			(size 4.4 4.4)
+			(drill 4.4)
+			(layers "*.Cu" "*.Mask")
+			(uuid "3c4b8680-777e-4b9b-894e-3bb0eaf43eff")
+		)
+		(pad "" smd custom
+			(at 2.094804 -2.094804 90)
+			(size 0.6725 0.6725)
+			(layers "F.Paste")
+			(options
+				(clearance outline)
+				(anchor circle)
+			)
+			(primitives
+				(gr_arc
+					(start -1.594804 -0.24231)
+					(mid -0.404819 0.404819)
+					(end 0.24231 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -0.3398)
+					(mid -0.337349 0.337349)
+					(end 0.3398 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -0.437132)
+					(mid -0.269879 0.269879)
+					(end 0.437132 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -0.534324)
+					(mid -0.202409 0.202409)
+					(end 0.534324 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -0.631391)
+					(mid -0.13494 0.13494)
+					(end 0.631391 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -0.728345)
+					(mid -0.06747 0.06747)
+					(end 0.728345 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -0.825197)
+					(mid 0 0)
+					(end 0.825197 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -0.921958)
+					(mid 0.06747 -0.06747)
+					(end 0.921958 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -1.018637)
+					(mid 0.13494 -0.13494)
+					(end 1.018637 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -1.115239)
+					(mid 0.202409 -0.202409)
+					(end 1.115239 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -1.211773)
+					(mid 0.269879 -0.269879)
+					(end 1.211773 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -1.308244)
+					(mid 0.337349 -0.337349)
+					(end 1.308244 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -1.404657)
+					(mid 0.404819 -0.404819)
+					(end 1.404657 1.594804)
+					(width 0.2)
+				)
+				(gr_arc
+					(start -1.594804 -1.404657)
+					(mid 0.404819 -0.404819)
+					(end 1.404657 1.594804)
+					(width 0.2)
+				)
+				(gr_line
+					(start 0.24231 1.594804)
+					(end 1.404657 1.594804)
+					(width 0.2)
+				)
+				(gr_line
+					(start -1.594804 -0.24231)
+					(end -1.594804 -1.404657)
+					(width 0.2)
+				)
+			)
+			(uuid "859b6e87-b321-4e39-90ee-1030db4cd335")
+		)
+		(pad "" smd custom
+			(at 2.094804 2.094804 90)
+			(size 0.6725 0.6725)
+			(layers "F.Paste")
+			(options
+				(clearance outline)
+				(anchor circle)
+			)
+			(primitives
+				(gr_arc
+					(start 0.24231 -1.594804)
+					(mid -0.404819 -0.404819)
+					(end -1.594804 0.24231)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 0.3398 -1.594804)
+					(mid -0.337349 -0.337349)
+					(end -1.594804 0.3398)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 0.437132 -1.594804)
+					(mid -0.269879 -0.269879)
+					(end -1.594804 0.437132)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 0.534324 -1.594804)
+					(mid -0.202409 -0.202409)
+					(end -1.594804 0.534324)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 0.631391 -1.594804)
+					(mid -0.13494 -0.13494)
+					(end -1.594804 0.631391)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 0.728345 -1.594804)
+					(mid -0.06747 -0.06747)
+					(end -1.594804 0.728345)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 0.825197 -1.594804)
+					(mid 0 0)
+					(end -1.594804 0.825197)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 0.921958 -1.594804)
+					(mid 0.06747 0.06747)
+					(end -1.594804 0.921958)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.018637 -1.594804)
+					(mid 0.13494 0.13494)
+					(end -1.594804 1.018637)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.115239 -1.594804)
+					(mid 0.202409 0.202409)
+					(end -1.594804 1.115239)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.211773 -1.594804)
+					(mid 0.269879 0.269879)
+					(end -1.594804 1.211773)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.308244 -1.594804)
+					(mid 0.337349 0.337349)
+					(end -1.594804 1.308244)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.404657 -1.594804)
+					(mid 0.404819 0.404819)
+					(end -1.594804 1.404657)
+					(width 0.2)
+				)
+				(gr_arc
+					(start 1.404657 -1.594804)
+					(mid 0.404819 0.404819)
+					(end -1.594804 1.404657)
+					(width 0.2)
+				)
+				(gr_line
+					(start -1.594804 0.24231)
+					(end -1.594804 1.404657)
+					(width 0.2)
+				)
+				(gr_line
+					(start 0.24231 -1.594804)
+					(end 1.404657 -1.594804)
+					(width 0.2)
+				)
+			)
+			(uuid "579b0203-3d73-46f8-b4e2-316b694ac2bb")
+		)
+		(pad "1" smd circle
+			(at -2.975 0 90)
+			(size 0.942 0.942)
+			(layers "F.Cu")
+			(net "unconnected-(H23-Pad1)")
+			(pinfunction "1_1")
+			(pintype "input")
+			(uuid "37c55d21-84c7-4861-86b3-3855c41afdc9")
+		)
+		(pad "1" smd circle
+			(at 0 -2.975 90)
+			(size 0.942 0.942)
+			(layers "F.Cu")
+			(net "unconnected-(H23-Pad1)")
+			(pinfunction "1_1")
+			(pintype "input")
+			(uuid "6a97bdf0-3170-4695-ab01-095b22d6cfc6")
+		)
+		(pad "1" smd circle
+			(at 0 2.975 90)
+			(size 0.942 0.942)
+			(layers "F.Cu")
+			(net "unconnected-(H23-Pad1)")
+			(pinfunction "1_1")
+			(pintype "input")
+			(uuid "e44be7bc-fce1-4c9e-9761-5dd5abca11ca")
+		)
+		(pad "1" smd custom
+			(at 2.975 0 90)
+			(size 1.45 1.45)
+			(layers "F.Cu" "F.Mask")
+			(net "unconnected-(H23-Pad1)")
+			(pinfunction "1_1")
+			(pintype "input")
+			(options
+				(clearance outline)
+				(anchor circle)
+			)
+			(primitives
+				(gr_circle
+					(center -2.975 0)
+					(end 0 0)
+					(width 1.45)
+					(fill no)
+				)
+			)
+			(uuid "2842dce1-6602-482f-9c1c-de032884c382")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 		(locked yes)
 		(layer "F.Cu")
@@ -2380,13 +2982,13 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "F.Cu")
 		(uuid "907deee1-f680-4716-9d14-b59b21870e58")
-		(at 87.95 65.4125)
+		(at 58.100196 58.6 90)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://www.we-online.com/components/products/datasheet/9775046960R.pdf)")
 		(tags "Mounting 3.2mm 9775046960")
-		(property "Reference" "ArmnigBoard"
-			(at -0.625 5.8 0)
+		(property "Reference" "H21"
+			(at -0.625 5.8 90)
 			(layer "B.SilkS")
-			(uuid "7875a19d-4a97-4e94-9b9a-306e4fe88fb0")
+			(uuid "a4e14630-db96-49b4-9c04-ca12b8e2afeb")
 			(effects
 				(font
 					(size 1 1)
@@ -2396,10 +2998,10 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 4.65 0)
+			(at 0 4.65 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "91935753-b61e-483f-aab0-9030f8a49201")
+			(uuid "d7275116-6a4e-43fc-b371-b353735a4541")
 			(effects
 				(font
 					(size 1 1)
@@ -2408,10 +3010,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "921649f2-5f4d-4803-9878-99ad9c6f0bb1")
+			(uuid "079cfba5-7baf-401c-aa7c-458d3580b01c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2419,10 +3021,10 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f9e6c5a7-9c94-4783-947e-f7d312acdde6")
+			(uuid "a30f11b0-b492-4135-a041-116ca24c0b16")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2430,7 +3032,7 @@
 			)
 		)
 		(property "KiLib_Generator" "mounting_hardware/Wuerth_SMT_spacer"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "304e6c80-e02c-4c85-9b7d-8a45a3038341")
@@ -2476,7 +3078,7 @@
 			(uuid "83e84b6e-5eee-47b9-81b4-0e7c7f0c7f72")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "64264075-1d79-4589-b274-e0c5242c54b1")
 			(effects
@@ -2487,7 +3089,7 @@
 			)
 		)
 		(pad "" smd custom
-			(at -2.094804 -2.094804)
+			(at -2.094804 -2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -2593,7 +3195,7 @@
 			(uuid "c58c9bdc-4bba-4e58-bd2c-635c82bc04d6")
 		)
 		(pad "" smd custom
-			(at -2.094804 2.094804)
+			(at -2.094804 2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -2699,14 +3301,14 @@
 			(uuid "e68cc3a0-8c13-417e-adb8-fd9a5aa3d133")
 		)
 		(pad "" np_thru_hole circle
-			(at 0 0)
+			(at 0 0 90)
 			(size 4.4 4.4)
 			(drill 4.4)
 			(layers "*.Cu" "*.Mask")
 			(uuid "9605af10-64e6-4cdc-bca4-467ba807f568")
 		)
 		(pad "" smd custom
-			(at 2.094804 -2.094804)
+			(at 2.094804 -2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -2812,7 +3414,7 @@
 			(uuid "2bdb3ec7-7839-44bd-a9c9-4eb7f3673602")
 		)
 		(pad "" smd custom
-			(at 2.094804 2.094804)
+			(at 2.094804 2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -2918,7 +3520,7 @@
 			(uuid "d5395d8c-0a86-4a0e-9786-a4de4e145588")
 		)
 		(pad "1" smd circle
-			(at -2.975 0)
+			(at -2.975 0 90)
 			(size 0.942 0.942)
 			(layers "F.Cu")
 			(net "unconnected-(H21-Pad1)_2")
@@ -2927,7 +3529,7 @@
 			(uuid "96c5036c-161e-48f1-a70a-00c451a08c64")
 		)
 		(pad "1" smd circle
-			(at 0 -2.975)
+			(at 0 -2.975 90)
 			(size 0.942 0.942)
 			(layers "F.Cu")
 			(net "unconnected-(H21-Pad1)_3")
@@ -2936,7 +3538,7 @@
 			(uuid "c0f64932-db90-4412-8664-b7e7f86bc2f6")
 		)
 		(pad "1" smd circle
-			(at 0 2.975)
+			(at 0 2.975 90)
 			(size 0.942 0.942)
 			(layers "F.Cu")
 			(net "unconnected-(H21-Pad1)_1")
@@ -2945,7 +3547,7 @@
 			(uuid "8c7fb468-fccb-496e-8b1d-5757648afd9c")
 		)
 		(pad "1" smd custom
-			(at 2.975 0)
+			(at 2.975 0 90)
 			(size 1.45 1.45)
 			(layers "F.Cu" "F.Mask")
 			(net "unconnected-(H21-Pad1)")
@@ -2981,14 +3583,14 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "F.Cu")
 		(uuid "aa4eb529-bd55-43cd-8369-051e236bd538")
-		(at 127.7 59.25)
+		(at 115.7 66.4)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H2"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "8dde6c61-9f3f-4478-96f8-d1dde6b6a287")
+			(uuid "30aba8a9-027d-4967-b0a6-c6db8a1ffdcb")
 			(effects
 				(font
 					(size 1 1)
@@ -3000,7 +3602,7 @@
 			(at 0 4.65 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "19bb8a98-446d-460b-81d1-ce911b44ad6b")
+			(uuid "b1294b02-e3ad-4e02-9693-bb176fb3af3a")
 			(effects
 				(font
 					(size 1 1)
@@ -3012,7 +3614,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ac82ef33-cdf3-40f6-815a-b24f4ab74754")
+			(uuid "e1375371-094e-4593-a743-dd2e2b416460")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3024,7 +3626,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a8fe6a60-ab3a-4881-8969-d01e5876c05d")
+			(uuid "86d01db2-373f-4d14-b35b-0762c54136b8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3066,8 +3668,8 @@
 			(layer "F.Fab")
 			(uuid "2656f721-1fe0-4c69-b882-bb420469e9ba")
 		)
-		(fp_text user "BatteryBoard"
-			(at 0 5.2 0)
+		(fp_text user "Powerboard"
+			(at 8.9 0.1 0)
 			(layer "B.SilkS")
 			(uuid "679402f0-381e-4d8f-9b17-0a8b383fd63e")
 			(effects
@@ -3573,11 +4175,11 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "F.Cu")
 		(uuid "deba9f18-7eba-4a9b-b326-42d2c2d944d0")
-		(at 59.425 98.3375)
+		(at 90.1 87.6 90)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://www.we-online.com/components/products/datasheet/9775046960R.pdf)")
 		(tags "Mounting 3.2mm 9775046960")
-		(property "Reference" "ArmingBoard"
-			(at 0.6 -5.225 0)
+		(property "Reference" "H22"
+			(at 0.6 -5.225 90)
 			(layer "B.SilkS")
 			(uuid "12afea17-ae53-4499-9352-99c62b69c785")
 			(effects
@@ -3589,7 +4191,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 4.65 0)
+			(at 0 4.65 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d526e028-c83f-419e-a5a3-d4ebf65e202a")
@@ -3601,7 +4203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "78b54474-6771-4f53-b435-8357b4be7355")
@@ -3612,7 +4214,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1f54a48d-06f4-4a53-acca-04795b0dd3c4")
@@ -3623,7 +4225,7 @@
 			)
 		)
 		(property "KiLib_Generator" "mounting_hardware/Wuerth_SMT_spacer"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3e48f1cf-5976-45f6-a21a-81e7c2ef6fe8")
@@ -3669,7 +4271,7 @@
 			(uuid "2a906962-3f54-465b-94a2-dece8a0ea3b4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "5e17908f-3cbf-4757-8178-ba95ed8890fb")
 			(effects
@@ -3680,7 +4282,7 @@
 			)
 		)
 		(pad "" smd custom
-			(at -2.094804 -2.094804)
+			(at -2.094804 -2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -3786,7 +4388,7 @@
 			(uuid "2f6600ae-7b14-4612-b814-f2d2fb4793e5")
 		)
 		(pad "" smd custom
-			(at -2.094804 2.094804)
+			(at -2.094804 2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -3892,14 +4494,14 @@
 			(uuid "ee8ff6d5-fb5f-4468-9274-23783d4b74b6")
 		)
 		(pad "" np_thru_hole circle
-			(at 0 0)
+			(at 0 0 90)
 			(size 4.4 4.4)
 			(drill 4.4)
 			(layers "*.Cu" "*.Mask")
 			(uuid "6b76e44d-0f11-429a-8546-a6cb55a0e257")
 		)
 		(pad "" smd custom
-			(at 2.094804 -2.094804)
+			(at 2.094804 -2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -4005,7 +4607,7 @@
 			(uuid "0dea02c3-0ea8-4ed0-ab10-9ea894cd20ac")
 		)
 		(pad "" smd custom
-			(at 2.094804 2.094804)
+			(at 2.094804 2.094804 90)
 			(size 0.6725 0.6725)
 			(layers "F.Paste")
 			(options
@@ -4111,7 +4713,7 @@
 			(uuid "04bcf0fc-1590-488c-b4ef-af61324aff3e")
 		)
 		(pad "1" smd circle
-			(at -2.975 0)
+			(at -2.975 0 90)
 			(size 0.942 0.942)
 			(layers "F.Cu")
 			(net "unconnected-(H22-Pad1)_3")
@@ -4120,7 +4722,7 @@
 			(uuid "ba985c47-acdd-4e60-8d79-a9ca36b0d6e8")
 		)
 		(pad "1" smd circle
-			(at 0 -2.975)
+			(at 0 -2.975 90)
 			(size 0.942 0.942)
 			(layers "F.Cu")
 			(net "unconnected-(H22-Pad1)")
@@ -4129,7 +4731,7 @@
 			(uuid "02f4e669-e840-4ef1-8dee-ac688b40a1bd")
 		)
 		(pad "1" smd circle
-			(at 0 2.975)
+			(at 0 2.975 90)
 			(size 0.942 0.942)
 			(layers "F.Cu")
 			(net "unconnected-(H22-Pad1)_1")
@@ -4138,7 +4740,7 @@
 			(uuid "76125c62-09f1-44db-b513-f0e50b327872")
 		)
 		(pad "1" smd custom
-			(at 2.975 0)
+			(at 2.975 0 90)
 			(size 1.45 1.45)
 			(layers "F.Cu" "F.Mask")
 			(net "unconnected-(H22-Pad1)_2")
@@ -4174,14 +4776,14 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "F.Cu")
 		(uuid "fba8bdc2-a275-4680-84fe-895076e8c77a")
-		(at 207.7 59.25)
+		(at 195.7 66.4)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H3"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "5113dbc8-6975-427b-b10d-2680422cedf5")
+			(uuid "2a781ffc-22c6-4c68-a9d1-fbcff5361e5e")
 			(effects
 				(font
 					(size 1 1)
@@ -4193,7 +4795,7 @@
 			(at 0 4.65 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e3a43ea0-d160-4df1-883a-92f6fa23dd1a")
+			(uuid "e74c23b3-9ff0-463f-a8f8-bec65d26375f")
 			(effects
 				(font
 					(size 1 1)
@@ -4205,7 +4807,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "886ecd25-4e8e-47ff-b390-3316b7e7d669")
+			(uuid "768bc06e-f1db-479f-8caa-fbae7f3c619a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4217,7 +4819,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1500cc8b-9d9e-44e1-a113-0facee84f77a")
+			(uuid "20cf09ac-a639-4e39-89c0-59ad9547c97a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4259,8 +4861,8 @@
 			(layer "F.Fab")
 			(uuid "03fd2033-b729-4368-917b-8c4ebb2df4e8")
 		)
-		(fp_text user "BatteryBoard"
-			(at 0.1 4.8 0)
+		(fp_text user "Powerboard"
+			(at -8.65 -0.15 0)
 			(layer "B.SilkS")
 			(uuid "f908dd63-23d3-458d-b5cb-3606b8747780")
 			(effects
@@ -4766,13 +5368,13 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "B.Cu")
 		(uuid "1744e785-1ba1-4460-b193-337be46ebec6")
-		(at 110.844804 88.105196)
+		(at 109.194804 71.605196)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H8"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(uuid "afabe794-6914-4941-9693-4a2578083b14")
+			(uuid "966d2026-86b3-42c2-80fb-bef83177735f")
 			(effects
 				(font
 					(size 1 1)
@@ -4782,10 +5384,10 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 -4.65 180)
+			(at 0 -4.65 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "8dab520c-b1bd-4728-bcf2-1d8b018126ee")
+			(uuid "55474fa5-1614-4433-9fca-780964dc4a35")
 			(effects
 				(font
 					(size 1 1)
@@ -4795,10 +5397,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "1a32caf3-821d-4837-8257-012bad24bd1e")
+			(uuid "82d23167-3b3f-43ed-97ae-977ae213e5a4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4808,10 +5410,10 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "964ea553-f262-40b0-8589-febc9cecd1d7")
+			(uuid "889e8524-3c2a-489b-8d91-f80083bb9ba8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4855,7 +5457,7 @@
 			(uuid "2674b4ee-1c9b-4c1b-a761-9349e4b35c14")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "01bf3623-42d4-4837-8c61-9b309ec3881b")
 			(effects
@@ -5360,610 +5962,14 @@
 	)
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "B.Cu")
-		(uuid "24524f9f-e8b6-46c7-9ecc-cff17c7ae964")
-		(at 84.905196 85.863332)
-		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
-		(tags "Mounting 3.2mm 9775046960")
-		(property "Reference" "H17"
-			(at 0 4.65 180)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "b4e99d15-58a9-4811-876a-4fe55f6e89bb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 0 -4.65 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "a45fb6eb-063e-437a-aa62-d0e78b8f6351")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "4c508515-7e3e-4f3f-805c-b5299e1ee0fe")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 0 0 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "93ffd936-5458-49ef-9479-ea7481499c74")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/761002be-0129-4261-aed6-815f3ef2d43f")
-		(sheetname "/")
-		(sheetfile "Structure_PCB.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr smd exclude_from_bom allow_soldermask_bridges)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_circle
-			(center 0 0)
-			(end 3.95 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.CrtYd")
-			(uuid "fe432b61-3d80-4f05-a930-a1a8d35155b5")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.Fab")
-			(uuid "8812704f-8c0c-4578-bd30-6221ab73381b")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 180)
-			(layer "B.Fab")
-			(uuid "8f616fb8-7609-4f45-8b12-6b5bb183efb6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(pad "" smd custom
-			(at -2.094804 -2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start -0.24231 1.594804)
-					(mid 0.404819 0.404819)
-					(end 1.594804 -0.24231)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.3398 1.594804)
-					(mid 0.337349 0.337349)
-					(end 1.594804 -0.3398)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.437132 1.594804)
-					(mid 0.269879 0.269879)
-					(end 1.594804 -0.437132)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.534324 1.594804)
-					(mid 0.202409 0.202409)
-					(end 1.594804 -0.534324)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.631391 1.594804)
-					(mid 0.13494 0.13494)
-					(end 1.594804 -0.631391)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.728345 1.594804)
-					(mid 0.06747 0.06747)
-					(end 1.594804 -0.728345)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.825197 1.594804)
-					(mid 0 0)
-					(end 1.594804 -0.825197)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.921958 1.594804)
-					(mid -0.06747 -0.06747)
-					(end 1.594804 -0.921958)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.018637 1.594804)
-					(mid -0.13494 -0.13494)
-					(end 1.594804 -1.018637)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.115239 1.594804)
-					(mid -0.202409 -0.202409)
-					(end 1.594804 -1.115239)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.211773 1.594804)
-					(mid -0.269879 -0.269879)
-					(end 1.594804 -1.211773)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.308244 1.594804)
-					(mid -0.337349 -0.337349)
-					(end 1.594804 -1.308244)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.404657 1.594804)
-					(mid -0.404819 -0.404819)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.404657 1.594804)
-					(mid -0.404819 -0.404819)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start -0.24231 1.594804)
-					(end -1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start 1.594804 -0.24231)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-			)
-			(uuid "3892f24a-a094-4a73-9546-788b839cd41a")
-		)
-		(pad "" smd custom
-			(at -2.094804 2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start 1.594804 0.24231)
-					(mid 0.404819 -0.404819)
-					(end -0.24231 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.3398)
-					(mid 0.337349 -0.337349)
-					(end -0.3398 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.437132)
-					(mid 0.269879 -0.269879)
-					(end -0.437132 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.534324)
-					(mid 0.202409 -0.202409)
-					(end -0.534324 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.631391)
-					(mid 0.13494 -0.13494)
-					(end -0.631391 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.728345)
-					(mid 0.06747 -0.06747)
-					(end -0.728345 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.825197)
-					(mid 0 0)
-					(end -0.825197 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.921958)
-					(mid -0.06747 0.06747)
-					(end -0.921958 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.018637)
-					(mid -0.13494 0.13494)
-					(end -1.018637 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.115239)
-					(mid -0.202409 0.202409)
-					(end -1.115239 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.211773)
-					(mid -0.269879 0.269879)
-					(end -1.211773 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.308244)
-					(mid -0.337349 0.337349)
-					(end -1.308244 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.404657)
-					(mid -0.404819 0.404819)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.404657)
-					(mid -0.404819 0.404819)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start 1.594804 0.24231)
-					(end 1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start -0.24231 -1.594804)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-			)
-			(uuid "3bead781-12da-4644-8199-82e2707aff1a")
-		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 4.4 4.4)
-			(drill 4.4)
-			(layers "*.Cu" "*.Mask")
-			(uuid "01e7f951-4c89-4f4d-b970-f71f8dea6b16")
-		)
-		(pad "" smd custom
-			(at 2.094804 -2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start -1.594804 -0.24231)
-					(mid -0.404819 0.404819)
-					(end 0.24231 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.3398)
-					(mid -0.337349 0.337349)
-					(end 0.3398 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.437132)
-					(mid -0.269879 0.269879)
-					(end 0.437132 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.534324)
-					(mid -0.202409 0.202409)
-					(end 0.534324 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.631391)
-					(mid -0.13494 0.13494)
-					(end 0.631391 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.728345)
-					(mid -0.06747 0.06747)
-					(end 0.728345 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.825197)
-					(mid 0 0)
-					(end 0.825197 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.921958)
-					(mid 0.06747 -0.06747)
-					(end 0.921958 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.018637)
-					(mid 0.13494 -0.13494)
-					(end 1.018637 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.115239)
-					(mid 0.202409 -0.202409)
-					(end 1.115239 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.211773)
-					(mid 0.269879 -0.269879)
-					(end 1.211773 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.308244)
-					(mid 0.337349 -0.337349)
-					(end 1.308244 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.404657)
-					(mid 0.404819 -0.404819)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.404657)
-					(mid 0.404819 -0.404819)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start -1.594804 -0.24231)
-					(end -1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start 0.24231 1.594804)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-			)
-			(uuid "6594d670-7f59-4ae1-bd6b-60e164e88e41")
-		)
-		(pad "" smd custom
-			(at 2.094804 2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start 0.24231 -1.594804)
-					(mid -0.404819 -0.404819)
-					(end -1.594804 0.24231)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.3398 -1.594804)
-					(mid -0.337349 -0.337349)
-					(end -1.594804 0.3398)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.437132 -1.594804)
-					(mid -0.269879 -0.269879)
-					(end -1.594804 0.437132)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.534324 -1.594804)
-					(mid -0.202409 -0.202409)
-					(end -1.594804 0.534324)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.631391 -1.594804)
-					(mid -0.13494 -0.13494)
-					(end -1.594804 0.631391)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.728345 -1.594804)
-					(mid -0.06747 -0.06747)
-					(end -1.594804 0.728345)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.825197 -1.594804)
-					(mid 0 0)
-					(end -1.594804 0.825197)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.921958 -1.594804)
-					(mid 0.06747 0.06747)
-					(end -1.594804 0.921958)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.018637 -1.594804)
-					(mid 0.13494 0.13494)
-					(end -1.594804 1.018637)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.115239 -1.594804)
-					(mid 0.202409 0.202409)
-					(end -1.594804 1.115239)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.211773 -1.594804)
-					(mid 0.269879 0.269879)
-					(end -1.594804 1.211773)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.308244 -1.594804)
-					(mid 0.337349 0.337349)
-					(end -1.594804 1.308244)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.404657 -1.594804)
-					(mid 0.404819 0.404819)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.404657 -1.594804)
-					(mid 0.404819 0.404819)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start 0.24231 -1.594804)
-					(end 1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start -1.594804 0.24231)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-			)
-			(uuid "7688fe55-44ac-4258-8f83-1047ec727090")
-		)
-		(pad "1" smd circle
-			(at -2.975 0)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H17-Pad1)_1")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "593fb155-eaae-4e89-b5d0-820f86375fb8")
-		)
-		(pad "1" smd circle
-			(at 0 -2.975)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H17-Pad1)_3")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "681bdad9-dd0d-45fc-a73d-d95069bff0fe")
-		)
-		(pad "1" smd circle
-			(at 0 2.975)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H17-Pad1)_2")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "61d3e10e-23e7-4f33-a2f6-961b162abc1b")
-		)
-		(pad "1" smd custom
-			(at 2.975 0)
-			(size 1.45 1.45)
-			(layers "B.Cu" "B.Mask")
-			(net "unconnected-(H17-Pad1)")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_circle
-					(center -2.975 0)
-					(end 0 0)
-					(width 1.45)
-					(fill no)
-				)
-			)
-			(uuid "24637576-dfd2-4df8-b547-76d2ccff9846")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-		(layer "B.Cu")
 		(uuid "461f75bf-9944-4d5c-87b9-0f034924d592")
-		(at 110.844804 138.105196)
+		(at 109.194804 121.605196)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H7"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(uuid "1a20aed5-d7ad-4baa-b4ab-3adeac361fbf")
+			(uuid "d9c9b33d-e6c4-4077-92a7-9f4f941ddb51")
 			(effects
 				(font
 					(size 1 1)
@@ -5973,10 +5979,10 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 -4.65 180)
+			(at 0 -4.65 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "eb77b972-1ee8-4b36-a94a-db53df4614d1")
+			(uuid "9f525a21-1151-498c-8766-0321780cce00")
 			(effects
 				(font
 					(size 1 1)
@@ -5986,10 +5992,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "6c04b74c-796e-42ed-acfe-ec8df79e49ab")
+			(uuid "73bca2ef-f8e1-4c8e-b3a8-ca3892af3470")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5999,10 +6005,10 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "db64eabc-e07c-4eb9-9d20-3de3dbe3409e")
+			(uuid "93e1ca11-76cf-4336-9dcc-80f06cac178f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6046,7 +6052,7 @@
 			(uuid "57560ca7-2f16-4dbd-9094-e5dfc5e9b2d7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "287e068c-0212-466c-807c-dba840206ed3")
 			(effects
@@ -6552,7 +6558,7 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "B.Cu")
 		(uuid "9d238652-9795-4603-81e2-af56f2e918d1")
-		(at 169.85 126.5)
+		(at 165.45 113.45)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H15"
@@ -7147,13 +7153,13 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "B.Cu")
 		(uuid "a30a9990-964b-4838-9246-8393010ca4a9")
-		(at 205.844804 88.105196)
+		(at 204.194804 71.605196)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H5"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(uuid "8f8d03da-591c-41b9-947b-281da91a68ac")
+			(uuid "660c7490-beab-4633-919e-8dcb7459741e")
 			(effects
 				(font
 					(size 1 1)
@@ -7163,10 +7169,10 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 -4.65 180)
+			(at 0 -4.65 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "e9efdda6-8fd6-4103-a11e-86776f9049df")
+			(uuid "a20e19ef-6a2a-4e53-90a0-501fcb06323c")
 			(effects
 				(font
 					(size 1 1)
@@ -7176,10 +7182,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "03a366b5-cc84-491f-9632-6bfbbd23a9de")
+			(uuid "56c01733-5e1c-4cd6-8b4c-c43d208074d2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7189,10 +7195,10 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "f46c4250-cd0f-4493-8a48-b02c44976ba5")
+			(uuid "6b7e2d0f-0f85-4b6f-8313-85a956311a5f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7236,7 +7242,7 @@
 			(uuid "abe8cb24-daba-4d71-8790-bb071f0c2091")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "4cbd2a19-7187-41e8-a028-a9fea45d0bff")
 			(effects
@@ -7742,13 +7748,13 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "B.Cu")
 		(uuid "b224a63c-a617-428f-b2a7-d3570147cbb2")
-		(at 205.844804 138.105196)
+		(at 204.194804 121.605196)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H6"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(uuid "583681fb-643b-4719-9bd5-42b5a817eeb4")
+			(uuid "96443ed5-e502-4600-b79c-080d91043c24")
 			(effects
 				(font
 					(size 1 1)
@@ -7758,10 +7764,10 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 -4.65 180)
+			(at 0 -4.65 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "34b1f83f-be7e-44e4-a8fb-f71fbf7bd1bd")
+			(uuid "92807dea-936e-49bc-a55c-7130c94a4509")
 			(effects
 				(font
 					(size 1 1)
@@ -7771,10 +7777,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c9785b96-d23a-442c-942a-9d109f9bfdd6")
+			(uuid "cb0f138a-6e98-4708-8297-3b48e27d4d49")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7784,10 +7790,10 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "8f706e6f-9d2b-475d-a8ca-8b769438a72d")
+			(uuid "5e984826-3aed-4cdc-9aec-1a5a03672ad5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7831,7 +7837,7 @@
 			(uuid "0c2c5e84-f69c-4313-8404-70b9e2aecdf5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 180)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "674f8ea9-9e88-4756-aaef-4e7562687a6e")
 			(effects
@@ -8336,604 +8342,8 @@
 	)
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "B.Cu")
-		(uuid "cb92eb1d-5c3f-467a-864a-414192c10d5c")
-		(at 217.994804 85.905196)
-		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
-		(tags "Mounting 3.2mm 9775046960")
-		(property "Reference" "H19"
-			(at 0 4.65 180)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "a228d699-1759-43b5-b1ad-92e4f60e8650")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 0 -4.65 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "ac3b18d8-c9cd-4bea-8fd3-021fbaa2f7eb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "350004e6-27cc-48ec-88ea-ddd051b33216")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 0 0 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "126b30a8-e3d9-4750-8bae-5509f0a35fea")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/91e36894-67f4-4eb9-826f-2a520dbab66f")
-		(sheetname "/")
-		(sheetfile "Structure_PCB.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr smd exclude_from_bom allow_soldermask_bridges)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_circle
-			(center 0 0)
-			(end 3.95 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.CrtYd")
-			(uuid "0b6d56e3-395c-4d4f-80fd-a3fd2a2e1197")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.Fab")
-			(uuid "5899ab28-c466-4e13-807a-7ff9b315e853")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 180)
-			(layer "B.Fab")
-			(uuid "c7dd7e42-04c3-4a3a-8834-efe6b63b703a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(pad "" smd custom
-			(at -2.094804 -2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start -0.24231 1.594804)
-					(mid 0.404819 0.404819)
-					(end 1.594804 -0.24231)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.3398 1.594804)
-					(mid 0.337349 0.337349)
-					(end 1.594804 -0.3398)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.437132 1.594804)
-					(mid 0.269879 0.269879)
-					(end 1.594804 -0.437132)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.534324 1.594804)
-					(mid 0.202409 0.202409)
-					(end 1.594804 -0.534324)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.631391 1.594804)
-					(mid 0.13494 0.13494)
-					(end 1.594804 -0.631391)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.728345 1.594804)
-					(mid 0.06747 0.06747)
-					(end 1.594804 -0.728345)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.825197 1.594804)
-					(mid 0 0)
-					(end 1.594804 -0.825197)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.921958 1.594804)
-					(mid -0.06747 -0.06747)
-					(end 1.594804 -0.921958)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.018637 1.594804)
-					(mid -0.13494 -0.13494)
-					(end 1.594804 -1.018637)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.115239 1.594804)
-					(mid -0.202409 -0.202409)
-					(end 1.594804 -1.115239)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.211773 1.594804)
-					(mid -0.269879 -0.269879)
-					(end 1.594804 -1.211773)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.308244 1.594804)
-					(mid -0.337349 -0.337349)
-					(end 1.594804 -1.308244)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.404657 1.594804)
-					(mid -0.404819 -0.404819)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.404657 1.594804)
-					(mid -0.404819 -0.404819)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start -0.24231 1.594804)
-					(end -1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start 1.594804 -0.24231)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-			)
-			(uuid "f317914c-1539-469f-b060-d4766a097843")
-		)
-		(pad "" smd custom
-			(at -2.094804 2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start 1.594804 0.24231)
-					(mid 0.404819 -0.404819)
-					(end -0.24231 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.3398)
-					(mid 0.337349 -0.337349)
-					(end -0.3398 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.437132)
-					(mid 0.269879 -0.269879)
-					(end -0.437132 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.534324)
-					(mid 0.202409 -0.202409)
-					(end -0.534324 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.631391)
-					(mid 0.13494 -0.13494)
-					(end -0.631391 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.728345)
-					(mid 0.06747 -0.06747)
-					(end -0.728345 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.825197)
-					(mid 0 0)
-					(end -0.825197 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.921958)
-					(mid -0.06747 0.06747)
-					(end -0.921958 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.018637)
-					(mid -0.13494 0.13494)
-					(end -1.018637 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.115239)
-					(mid -0.202409 0.202409)
-					(end -1.115239 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.211773)
-					(mid -0.269879 0.269879)
-					(end -1.211773 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.308244)
-					(mid -0.337349 0.337349)
-					(end -1.308244 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.404657)
-					(mid -0.404819 0.404819)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.404657)
-					(mid -0.404819 0.404819)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start 1.594804 0.24231)
-					(end 1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start -0.24231 -1.594804)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-			)
-			(uuid "76d93add-4d8f-4b8e-ab1f-275d1b9d4600")
-		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 4.4 4.4)
-			(drill 4.4)
-			(layers "*.Cu" "*.Mask")
-			(uuid "601aabf6-a4da-4df4-901f-5856a0e80b02")
-		)
-		(pad "" smd custom
-			(at 2.094804 -2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start -1.594804 -0.24231)
-					(mid -0.404819 0.404819)
-					(end 0.24231 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.3398)
-					(mid -0.337349 0.337349)
-					(end 0.3398 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.437132)
-					(mid -0.269879 0.269879)
-					(end 0.437132 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.534324)
-					(mid -0.202409 0.202409)
-					(end 0.534324 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.631391)
-					(mid -0.13494 0.13494)
-					(end 0.631391 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.728345)
-					(mid -0.06747 0.06747)
-					(end 0.728345 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.825197)
-					(mid 0 0)
-					(end 0.825197 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.921958)
-					(mid 0.06747 -0.06747)
-					(end 0.921958 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.018637)
-					(mid 0.13494 -0.13494)
-					(end 1.018637 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.115239)
-					(mid 0.202409 -0.202409)
-					(end 1.115239 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.211773)
-					(mid 0.269879 -0.269879)
-					(end 1.211773 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.308244)
-					(mid 0.337349 -0.337349)
-					(end 1.308244 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.404657)
-					(mid 0.404819 -0.404819)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.404657)
-					(mid 0.404819 -0.404819)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start -1.594804 -0.24231)
-					(end -1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start 0.24231 1.594804)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-			)
-			(uuid "ab5b73ed-20fa-4c18-8a0a-3675c0a3d416")
-		)
-		(pad "" smd custom
-			(at 2.094804 2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start 0.24231 -1.594804)
-					(mid -0.404819 -0.404819)
-					(end -1.594804 0.24231)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.3398 -1.594804)
-					(mid -0.337349 -0.337349)
-					(end -1.594804 0.3398)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.437132 -1.594804)
-					(mid -0.269879 -0.269879)
-					(end -1.594804 0.437132)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.534324 -1.594804)
-					(mid -0.202409 -0.202409)
-					(end -1.594804 0.534324)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.631391 -1.594804)
-					(mid -0.13494 -0.13494)
-					(end -1.594804 0.631391)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.728345 -1.594804)
-					(mid -0.06747 -0.06747)
-					(end -1.594804 0.728345)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.825197 -1.594804)
-					(mid 0 0)
-					(end -1.594804 0.825197)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.921958 -1.594804)
-					(mid 0.06747 0.06747)
-					(end -1.594804 0.921958)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.018637 -1.594804)
-					(mid 0.13494 0.13494)
-					(end -1.594804 1.018637)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.115239 -1.594804)
-					(mid 0.202409 0.202409)
-					(end -1.594804 1.115239)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.211773 -1.594804)
-					(mid 0.269879 0.269879)
-					(end -1.594804 1.211773)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.308244 -1.594804)
-					(mid 0.337349 0.337349)
-					(end -1.594804 1.308244)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.404657 -1.594804)
-					(mid 0.404819 0.404819)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.404657 -1.594804)
-					(mid 0.404819 0.404819)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start 0.24231 -1.594804)
-					(end 1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start -1.594804 0.24231)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-			)
-			(uuid "e3101ac2-77c0-4326-8174-c8741a6e3e17")
-		)
-		(pad "1" smd circle
-			(at -2.975 0)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H19-Pad1)_1")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "511e177c-dd4a-44c8-a97d-a3bab45e6022")
-		)
-		(pad "1" smd circle
-			(at 0 -2.975)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H19-Pad1)")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "4ab8185e-c7c8-4765-8c52-b00afca07da2")
-		)
-		(pad "1" smd circle
-			(at 0 2.975)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H19-Pad1)_3")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "c4da3d7e-0a1c-481b-95ef-daf202f557fc")
-		)
-		(pad "1" smd custom
-			(at 2.975 0)
-			(size 1.45 1.45)
-			(layers "B.Cu" "B.Mask")
-			(net "unconnected-(H19-Pad1)_2")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_circle
-					(center -2.975 0)
-					(end 0 0)
-					(width 1.45)
-					(fill no)
-				)
-			)
-			(uuid "7678d49f-7a7e-4af0-9c91-0f98544749bb")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-		(layer "B.Cu")
 		(uuid "ceca6497-f9ed-4e9c-8b98-fcda0f9bd1eb")
-		(at 109.85 99.5)
+		(at 105.45 86.45)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H13"
@@ -9527,604 +8937,8 @@
 	)
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 		(layer "B.Cu")
-		(uuid "d6aa95ab-cf39-4c12-b7af-9032eedf2696")
-		(at 218.005196 128.894804)
-		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
-		(tags "Mounting 3.2mm 9775046960")
-		(property "Reference" "H18"
-			(at 0 4.65 180)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "6432df12-ce73-4bfb-8222-27f0d00b66b5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 0 -4.65 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "3b75278e-d374-477e-93db-b4b55e7e232d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "51fd7cce-3e88-4388-8450-abccad2c84ea")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 0 0 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "b176f88d-8f3b-4718-82c3-255329271f7c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/3c9613a1-11b6-4b20-bc31-ce9115519554")
-		(sheetname "/")
-		(sheetfile "Structure_PCB.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr smd exclude_from_bom allow_soldermask_bridges)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_circle
-			(center 0 0)
-			(end 3.95 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.CrtYd")
-			(uuid "32bc869a-1a98-4dea-bcf5-e15adc82a3e1")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.Fab")
-			(uuid "a3d342d8-61b7-4d53-b954-f49efe09bf65")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0.125 -0.125 180)
-			(layer "B.Fab")
-			(uuid "478a76cd-9103-4f05-b327-88697d162957")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(pad "" smd custom
-			(at -2.094804 -2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start -0.24231 1.594804)
-					(mid 0.404819 0.404819)
-					(end 1.594804 -0.24231)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.3398 1.594804)
-					(mid 0.337349 0.337349)
-					(end 1.594804 -0.3398)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.437132 1.594804)
-					(mid 0.269879 0.269879)
-					(end 1.594804 -0.437132)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.534324 1.594804)
-					(mid 0.202409 0.202409)
-					(end 1.594804 -0.534324)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.631391 1.594804)
-					(mid 0.13494 0.13494)
-					(end 1.594804 -0.631391)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.728345 1.594804)
-					(mid 0.06747 0.06747)
-					(end 1.594804 -0.728345)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.825197 1.594804)
-					(mid 0 0)
-					(end 1.594804 -0.825197)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.921958 1.594804)
-					(mid -0.06747 -0.06747)
-					(end 1.594804 -0.921958)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.018637 1.594804)
-					(mid -0.13494 -0.13494)
-					(end 1.594804 -1.018637)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.115239 1.594804)
-					(mid -0.202409 -0.202409)
-					(end 1.594804 -1.115239)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.211773 1.594804)
-					(mid -0.269879 -0.269879)
-					(end 1.594804 -1.211773)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.308244 1.594804)
-					(mid -0.337349 -0.337349)
-					(end 1.594804 -1.308244)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.404657 1.594804)
-					(mid -0.404819 -0.404819)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.404657 1.594804)
-					(mid -0.404819 -0.404819)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start -0.24231 1.594804)
-					(end -1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start 1.594804 -0.24231)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-			)
-			(uuid "8ebc8412-5119-4fe5-99b9-cab128040158")
-		)
-		(pad "" smd custom
-			(at -2.094804 2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start 1.594804 0.24231)
-					(mid 0.404819 -0.404819)
-					(end -0.24231 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.3398)
-					(mid 0.337349 -0.337349)
-					(end -0.3398 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.437132)
-					(mid 0.269879 -0.269879)
-					(end -0.437132 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.534324)
-					(mid 0.202409 -0.202409)
-					(end -0.534324 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.631391)
-					(mid 0.13494 -0.13494)
-					(end -0.631391 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.728345)
-					(mid 0.06747 -0.06747)
-					(end -0.728345 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.825197)
-					(mid 0 0)
-					(end -0.825197 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.921958)
-					(mid -0.06747 0.06747)
-					(end -0.921958 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.018637)
-					(mid -0.13494 0.13494)
-					(end -1.018637 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.115239)
-					(mid -0.202409 0.202409)
-					(end -1.115239 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.211773)
-					(mid -0.269879 0.269879)
-					(end -1.211773 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.308244)
-					(mid -0.337349 0.337349)
-					(end -1.308244 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.404657)
-					(mid -0.404819 0.404819)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.404657)
-					(mid -0.404819 0.404819)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start 1.594804 0.24231)
-					(end 1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start -0.24231 -1.594804)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-			)
-			(uuid "6f029ece-b7e5-42f4-a8fc-a764d9f1c1b0")
-		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 4.4 4.4)
-			(drill 4.4)
-			(layers "*.Cu" "*.Mask")
-			(uuid "2fac030f-3972-45ce-a5eb-18274a628fc5")
-		)
-		(pad "" smd custom
-			(at 2.094804 -2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start -1.594804 -0.24231)
-					(mid -0.404819 0.404819)
-					(end 0.24231 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.3398)
-					(mid -0.337349 0.337349)
-					(end 0.3398 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.437132)
-					(mid -0.269879 0.269879)
-					(end 0.437132 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.534324)
-					(mid -0.202409 0.202409)
-					(end 0.534324 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.631391)
-					(mid -0.13494 0.13494)
-					(end 0.631391 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.728345)
-					(mid -0.06747 0.06747)
-					(end 0.728345 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.825197)
-					(mid 0 0)
-					(end 0.825197 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.921958)
-					(mid 0.06747 -0.06747)
-					(end 0.921958 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.018637)
-					(mid 0.13494 -0.13494)
-					(end 1.018637 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.115239)
-					(mid 0.202409 -0.202409)
-					(end 1.115239 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.211773)
-					(mid 0.269879 -0.269879)
-					(end 1.211773 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.308244)
-					(mid 0.337349 -0.337349)
-					(end 1.308244 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.404657)
-					(mid 0.404819 -0.404819)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.404657)
-					(mid 0.404819 -0.404819)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start -1.594804 -0.24231)
-					(end -1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start 0.24231 1.594804)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-			)
-			(uuid "fe373ad8-e58d-4fab-9d21-d4d240d3769f")
-		)
-		(pad "" smd custom
-			(at 2.094804 2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start 0.24231 -1.594804)
-					(mid -0.404819 -0.404819)
-					(end -1.594804 0.24231)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.3398 -1.594804)
-					(mid -0.337349 -0.337349)
-					(end -1.594804 0.3398)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.437132 -1.594804)
-					(mid -0.269879 -0.269879)
-					(end -1.594804 0.437132)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.534324 -1.594804)
-					(mid -0.202409 -0.202409)
-					(end -1.594804 0.534324)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.631391 -1.594804)
-					(mid -0.13494 -0.13494)
-					(end -1.594804 0.631391)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.728345 -1.594804)
-					(mid -0.06747 -0.06747)
-					(end -1.594804 0.728345)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.825197 -1.594804)
-					(mid 0 0)
-					(end -1.594804 0.825197)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.921958 -1.594804)
-					(mid 0.06747 0.06747)
-					(end -1.594804 0.921958)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.018637 -1.594804)
-					(mid 0.13494 0.13494)
-					(end -1.594804 1.018637)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.115239 -1.594804)
-					(mid 0.202409 0.202409)
-					(end -1.594804 1.115239)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.211773 -1.594804)
-					(mid 0.269879 0.269879)
-					(end -1.594804 1.211773)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.308244 -1.594804)
-					(mid 0.337349 0.337349)
-					(end -1.594804 1.308244)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.404657 -1.594804)
-					(mid 0.404819 0.404819)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.404657 -1.594804)
-					(mid 0.404819 0.404819)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start 0.24231 -1.594804)
-					(end 1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start -1.594804 0.24231)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-			)
-			(uuid "c719a152-6b4b-4181-8119-12aee1f9d99e")
-		)
-		(pad "1" smd circle
-			(at -2.975 0)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H18-Pad1)_1")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "82a3f18c-b22e-46dc-a343-743ac919c279")
-		)
-		(pad "1" smd circle
-			(at 0 -2.975)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H18-Pad1)_3")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "8a237432-d17c-4499-a9bf-6740cedd0a0b")
-		)
-		(pad "1" smd circle
-			(at 0 2.975)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H18-Pad1)")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "73d27e29-af26-4349-8f7e-ff5c9261d18c")
-		)
-		(pad "1" smd custom
-			(at 2.975 0)
-			(size 1.45 1.45)
-			(layers "B.Cu" "B.Mask")
-			(net "unconnected-(H18-Pad1)_2")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_circle
-					(center -2.975 0)
-					(end 0 0)
-					(width 1.45)
-					(fill no)
-				)
-			)
-			(uuid "8559df94-b12c-4e0e-8ed5-747f3c87a2d9")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-		(layer "B.Cu")
 		(uuid "eea70c65-6bce-4639-8fe2-7c7a8b3d895a")
-		(at 169.85 99.5)
+		(at 165.45 86.45)
 		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting 3.2mm 9775046960")
 		(property "Reference" "H14"
@@ -10716,602 +9530,6 @@
 			)
 		)
 	)
-	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-		(layer "B.Cu")
-		(uuid "f95d2547-ce9d-4fd0-8ad3-a505aa94bd90")
-		(at 85.005196 128.868528)
-		(descr "Mounting Hardware, inside through hole 3.2mm, height 4.6, Wuerth electronics 9775046960 (https://katalog.we-online.com/em/datasheet/9775046960.pdf), generated with kicad-footprint-generator")
-		(tags "Mounting 3.2mm 9775046960")
-		(property "Reference" "H16"
-			(at 0 4.65 180)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "9bd60ce3-a367-42f2-890a-1802bbe77138")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 0 -4.65 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "3a90bbb2-fefa-42ce-82da-181277afb7b9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "11506582-9ba3-43a0-9e59-5ecdce652556")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 0 0 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "26bce022-06ba-4847-9527-6c8652b9f8d9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/787c0307-d583-47c5-8b99-f61b437e9330")
-		(sheetname "/")
-		(sheetfile "Structure_PCB.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr smd exclude_from_bom allow_soldermask_bridges)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_circle
-			(center 0 0)
-			(end 3.95 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.CrtYd")
-			(uuid "4a6e552a-0093-42f2-984d-2fcdf625fdc6")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.Fab")
-			(uuid "b70faac1-7827-41dc-9d4b-fba57674c48e")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 180)
-			(layer "B.Fab")
-			(uuid "64fda59d-6415-4d5e-89dc-e560d76e4510")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(pad "" smd custom
-			(at -2.094804 -2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start -0.24231 1.594804)
-					(mid 0.404819 0.404819)
-					(end 1.594804 -0.24231)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.3398 1.594804)
-					(mid 0.337349 0.337349)
-					(end 1.594804 -0.3398)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.437132 1.594804)
-					(mid 0.269879 0.269879)
-					(end 1.594804 -0.437132)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.534324 1.594804)
-					(mid 0.202409 0.202409)
-					(end 1.594804 -0.534324)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.631391 1.594804)
-					(mid 0.13494 0.13494)
-					(end 1.594804 -0.631391)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.728345 1.594804)
-					(mid 0.06747 0.06747)
-					(end 1.594804 -0.728345)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.825197 1.594804)
-					(mid 0 0)
-					(end 1.594804 -0.825197)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -0.921958 1.594804)
-					(mid -0.06747 -0.06747)
-					(end 1.594804 -0.921958)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.018637 1.594804)
-					(mid -0.13494 -0.13494)
-					(end 1.594804 -1.018637)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.115239 1.594804)
-					(mid -0.202409 -0.202409)
-					(end 1.594804 -1.115239)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.211773 1.594804)
-					(mid -0.269879 -0.269879)
-					(end 1.594804 -1.211773)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.308244 1.594804)
-					(mid -0.337349 -0.337349)
-					(end 1.594804 -1.308244)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.404657 1.594804)
-					(mid -0.404819 -0.404819)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.404657 1.594804)
-					(mid -0.404819 -0.404819)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start -0.24231 1.594804)
-					(end -1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start 1.594804 -0.24231)
-					(end 1.594804 -1.404657)
-					(width 0.2)
-				)
-			)
-			(uuid "1bd46224-cfc5-4166-b0a8-de4f4d8d0f45")
-		)
-		(pad "" smd custom
-			(at -2.094804 2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start 1.594804 0.24231)
-					(mid 0.404819 -0.404819)
-					(end -0.24231 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.3398)
-					(mid 0.337349 -0.337349)
-					(end -0.3398 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.437132)
-					(mid 0.269879 -0.269879)
-					(end -0.437132 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.534324)
-					(mid 0.202409 -0.202409)
-					(end -0.534324 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.631391)
-					(mid 0.13494 -0.13494)
-					(end -0.631391 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.728345)
-					(mid 0.06747 -0.06747)
-					(end -0.728345 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.825197)
-					(mid 0 0)
-					(end -0.825197 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 0.921958)
-					(mid -0.06747 0.06747)
-					(end -0.921958 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.018637)
-					(mid -0.13494 0.13494)
-					(end -1.018637 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.115239)
-					(mid -0.202409 0.202409)
-					(end -1.115239 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.211773)
-					(mid -0.269879 0.269879)
-					(end -1.211773 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.308244)
-					(mid -0.337349 0.337349)
-					(end -1.308244 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.404657)
-					(mid -0.404819 0.404819)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.594804 1.404657)
-					(mid -0.404819 0.404819)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start 1.594804 0.24231)
-					(end 1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start -0.24231 -1.594804)
-					(end -1.404657 -1.594804)
-					(width 0.2)
-				)
-			)
-			(uuid "b4c8ed7f-5e09-45e7-ab1f-63eabb9211d3")
-		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 4.4 4.4)
-			(drill 4.4)
-			(layers "*.Cu" "*.Mask")
-			(uuid "fb8390da-337a-47ff-af55-133e62c57045")
-		)
-		(pad "" smd custom
-			(at 2.094804 -2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start -1.594804 -0.24231)
-					(mid -0.404819 0.404819)
-					(end 0.24231 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.3398)
-					(mid -0.337349 0.337349)
-					(end 0.3398 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.437132)
-					(mid -0.269879 0.269879)
-					(end 0.437132 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.534324)
-					(mid -0.202409 0.202409)
-					(end 0.534324 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.631391)
-					(mid -0.13494 0.13494)
-					(end 0.631391 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.728345)
-					(mid -0.06747 0.06747)
-					(end 0.728345 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.825197)
-					(mid 0 0)
-					(end 0.825197 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -0.921958)
-					(mid 0.06747 -0.06747)
-					(end 0.921958 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.018637)
-					(mid 0.13494 -0.13494)
-					(end 1.018637 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.115239)
-					(mid 0.202409 -0.202409)
-					(end 1.115239 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.211773)
-					(mid 0.269879 -0.269879)
-					(end 1.211773 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.308244)
-					(mid 0.337349 -0.337349)
-					(end 1.308244 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.404657)
-					(mid 0.404819 -0.404819)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_arc
-					(start -1.594804 -1.404657)
-					(mid 0.404819 -0.404819)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start -1.594804 -0.24231)
-					(end -1.594804 -1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start 0.24231 1.594804)
-					(end 1.404657 1.594804)
-					(width 0.2)
-				)
-			)
-			(uuid "bd874810-6f47-4adb-9312-74e463af5881")
-		)
-		(pad "" smd custom
-			(at 2.094804 2.094804)
-			(size 0.6725 0.6725)
-			(layers "B.Paste")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_arc
-					(start 0.24231 -1.594804)
-					(mid -0.404819 -0.404819)
-					(end -1.594804 0.24231)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.3398 -1.594804)
-					(mid -0.337349 -0.337349)
-					(end -1.594804 0.3398)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.437132 -1.594804)
-					(mid -0.269879 -0.269879)
-					(end -1.594804 0.437132)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.534324 -1.594804)
-					(mid -0.202409 -0.202409)
-					(end -1.594804 0.534324)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.631391 -1.594804)
-					(mid -0.13494 -0.13494)
-					(end -1.594804 0.631391)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.728345 -1.594804)
-					(mid -0.06747 -0.06747)
-					(end -1.594804 0.728345)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.825197 -1.594804)
-					(mid 0 0)
-					(end -1.594804 0.825197)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 0.921958 -1.594804)
-					(mid 0.06747 0.06747)
-					(end -1.594804 0.921958)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.018637 -1.594804)
-					(mid 0.13494 0.13494)
-					(end -1.594804 1.018637)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.115239 -1.594804)
-					(mid 0.202409 0.202409)
-					(end -1.594804 1.115239)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.211773 -1.594804)
-					(mid 0.269879 0.269879)
-					(end -1.594804 1.211773)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.308244 -1.594804)
-					(mid 0.337349 0.337349)
-					(end -1.594804 1.308244)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.404657 -1.594804)
-					(mid 0.404819 0.404819)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_arc
-					(start 1.404657 -1.594804)
-					(mid 0.404819 0.404819)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-				(gr_line
-					(start 0.24231 -1.594804)
-					(end 1.404657 -1.594804)
-					(width 0.2)
-				)
-				(gr_line
-					(start -1.594804 0.24231)
-					(end -1.594804 1.404657)
-					(width 0.2)
-				)
-			)
-			(uuid "80bf52dc-7079-4fce-aaa9-7b115eace48f")
-		)
-		(pad "1" smd circle
-			(at -2.975 0)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H16-Pad1)_1")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "7f5a9025-2b25-4a8d-bd1b-9f673f5590c4")
-		)
-		(pad "1" smd circle
-			(at 0 -2.975)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H16-Pad1)_2")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "a52d1286-39a4-47d6-9fe9-77c6142e1ff5")
-		)
-		(pad "1" smd circle
-			(at 0 2.975)
-			(size 0.942 0.942)
-			(layers "B.Cu")
-			(net "unconnected-(H16-Pad1)")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(uuid "3240c435-0119-4dc5-bbf1-11ffd2579525")
-		)
-		(pad "1" smd custom
-			(at 2.975 0)
-			(size 1.45 1.45)
-			(layers "B.Cu" "B.Mask")
-			(net "unconnected-(H16-Pad1)_3")
-			(pinfunction "1_1")
-			(pintype "input+no_connect")
-			(options
-				(clearance outline)
-				(anchor circle)
-			)
-			(primitives
-				(gr_circle
-					(center -2.975 0)
-					(end 0 0)
-					(width 1.45)
-					(fill no)
-				)
-			)
-			(uuid "e03d6988-4f62-45ea-ae6b-9c2d10182e46")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(gr_line
 		(start 65 100)
 		(end 215 100)
@@ -11378,242 +9596,65 @@
 		(uuid "83a38b01-5ada-4981-9cec-7e4c914c2394")
 	)
 	(gr_line
-		(start 63.8 122.25)
-		(end 63.8 130.75)
+		(start 53.6 121.3)
+		(end 53.6 121.35)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "69f84b91-8060-4ae1-b65b-9a5849ebcc7b")
-	)
-	(gr_arc
-		(start 63.8 122.25)
-		(mid 64.092893 121.542893)
-		(end 64.8 121.25)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "b7442b5d-e5aa-4b58-a976-182b5ad1ca82")
-	)
-	(gr_arc
-		(start 64.8 131.75)
-		(mid 64.092893 131.457107)
-		(end 63.8 130.75)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "56d368ca-6aee-4697-90bb-1ac7cb71d289")
+		(uuid "28f1926d-18d3-43e6-b0df-ad3a02a13691")
 	)
 	(gr_line
-		(start 64.8 131.75)
-		(end 72.3 131.75)
+		(start 53.6 121.3)
+		(end 91.1 121.3)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "76a6dce0-036f-4abe-9a1e-c21dec4a3031")
-	)
-	(gr_rect
-		(start 68 89.5)
-		(end 73 91.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "6b9e3c77-2ae3-469d-bac4-77cbd1a20a32")
-	)
-	(gr_rect
-		(start 68 96.5)
-		(end 73 98.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "88f3f055-1b8b-40bb-ae6c-00115467e7a5")
+		(uuid "11d387b6-1086-464b-9b10-79f238d12f77")
 	)
 	(gr_line
-		(start 72.3 121.25)
-		(end 64.8 121.25)
+		(start 53.6 142.3)
+		(end 53.6 121.35)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "0f7cfe12-b3b8-4d10-ba75-bdcce46f83e5")
-	)
-	(gr_arc
-		(start 72.3 121.25)
-		(mid 73.007107 121.542893)
-		(end 73.3 122.25)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "b0196273-3f45-4531-8854-af1b280fc9f2")
-	)
-	(gr_arc
-		(start 73.3 130.75)
-		(mid 73.007107 131.457107)
-		(end 72.3 131.75)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "179369fe-7fce-419e-bf80-a158380ad712")
+		(uuid "5ea76422-b26a-4e2a-afeb-32f084b1f65a")
 	)
 	(gr_line
-		(start 73.3 130.75)
-		(end 73.3 122.25)
+		(start 91.1 121.3)
+		(end 91.1 142.3)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "e3a009f9-438d-4864-9a39-92d738b64bdc")
+		(uuid "8103569a-8e93-45f7-8d4e-e76cba37f5b2")
+	)
+	(gr_line
+		(start 91.1 142.3)
+		(end 53.6 142.3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "cd37a5b9-8e95-43ea-97be-43d0b73b79c9")
 	)
 	(gr_rect
-		(start 83.6 136.35)
-		(end 87.6 138.35)
+		(start 133.25 76.475)
+		(end 141.25 79.975)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill no)
 		(layer "Edge.Cuts")
-		(uuid "4357aefa-b825-4991-804f-4d52a28b93b4")
-	)
-	(gr_rect
-		(start 83.6 143.35)
-		(end 87.6 145.35)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "caca38e5-36bc-431e-b3f1-4455cbbe2e45")
-	)
-	(gr_rect
-		(start 91.975 136.375)
-		(end 95.975 138.375)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "fb302e97-e0d1-472a-a3c3-a7d2d85f0381")
-	)
-	(gr_rect
-		(start 91.975 143.375)
-		(end 95.975 145.375)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "1d67fa86-9c12-418e-993e-387f8291eca8")
-	)
-	(gr_rect
-		(start 99.672624 136.278344)
-		(end 103.672624 138.278344)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "7d603f48-ea2c-45d7-b643-31b8635a4a32")
-	)
-	(gr_rect
-		(start 99.672624 143.278344)
-		(end 103.672624 145.278344)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "ca5f87e5-0c2a-47ed-af4e-3188859bde80")
-	)
-	(gr_rect
-		(start 102.8 60.7)
-		(end 106.8 62.7)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "868fe722-a9a7-4190-9e00-a9888cbb608c")
-	)
-	(gr_rect
-		(start 102.8 67.7)
-		(end 106.8 69.7)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "d345023e-9293-4e33-94fa-14ee008050e6")
-	)
-	(gr_rect
-		(start 110.833653 60.614506)
-		(end 114.833653 62.614506)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "99a3ad1f-28b1-4333-903d-3f0cf2bbd19a")
-	)
-	(gr_rect
-		(start 110.833653 67.614506)
-		(end 114.833653 69.614506)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "70a8dc23-6d9d-482d-9c46-29278a08f854")
-	)
-	(gr_rect
-		(start 120.6 136.5)
-		(end 124.6 138.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "771004fa-2104-4ad7-879c-cf37c1b43fde")
-	)
-	(gr_rect
-		(start 120.6 143.5)
-		(end 124.6 145.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "02340cbd-ee7f-4786-810d-abb63ef8a2d8")
+		(uuid "0875edea-980e-4f43-82c7-5184e2b43308")
 	)
 	(gr_arc
 		(start 133.5 50)
@@ -11635,6 +9676,17 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "52188238-ec25-46ee-952f-9e211a7f02ed")
+	)
+	(gr_rect
+		(start 133.7 83.725)
+		(end 139.2 87.725)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "bae2f98f-2cda-492d-96b6-1b5f2cb75ff7")
 	)
 	(gr_line
 		(start 134 52.75)
@@ -11698,28 +9750,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "5528b215-3e48-46b1-9dc7-9172e2a22312")
-	)
-	(gr_rect
-		(start 144.75 69.25)
-		(end 152.75 72.75)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "0875edea-980e-4f43-82c7-5184e2b43308")
-	)
-	(gr_rect
-		(start 145.2 76.5)
-		(end 150.7 80.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "bae2f98f-2cda-492d-96b6-1b5f2cb75ff7")
 	)
 	(gr_line
 		(start 145.5 53.25)
@@ -11805,138 +9835,6 @@
 		(layer "Edge.Cuts")
 		(uuid "a8af5f37-09f5-4e1f-a189-0dfc86ac8462")
 	)
-	(gr_rect
-		(start 172.2 62.3)
-		(end 174.2 66.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "f5379963-6240-42c9-80d0-2c8ef7eccbf7")
-	)
-	(gr_rect
-		(start 179.2 62.3)
-		(end 181.2 66.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "32942936-f8c2-40aa-89fb-a4a1466210b6")
-	)
-	(gr_rect
-		(start 189.5 60.5)
-		(end 193.5 62.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "f4fec596-a0c8-4466-936d-ea08a1c6934c")
-	)
-	(gr_rect
-		(start 189.5 67.5)
-		(end 193.5 69.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "61b78188-5376-4421-a463-c77f77ef60e0")
-	)
-	(gr_rect
-		(start 205 99)
-		(end 210 101)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "80190a54-d9f6-4580-a632-ce28bd85e46c")
-	)
-	(gr_rect
-		(start 205 106)
-		(end 210 108)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "c6ad97e4-7f33-46e1-83b4-86d651cf87af")
-	)
-	(gr_rect
-		(start 222 80)
-		(end 227 82)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "fe3b7d77-894e-4322-9b21-eb3322a52b17")
-	)
-	(gr_rect
-		(start 222 87)
-		(end 227 89)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "859cedf3-6c39-4054-8631-e7c6d654b435")
-	)
-	(gr_rect
-		(start 222 95)
-		(end 227 97)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "0876fb3e-f34f-43e8-a687-bf1c46e2ac9c")
-	)
-	(gr_rect
-		(start 222 103)
-		(end 227 105)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "a1d34ecc-a771-40cb-b9c6-0c00fade8e6a")
-	)
-	(gr_rect
-		(start 222 111)
-		(end 227 113)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "2cc00466-015a-42ec-9406-30612c01a49c")
-	)
-	(gr_rect
-		(start 222 118)
-		(end 227 120)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "b55ee721-ef3a-4295-9a82-f1d47c76c66e")
-	)
 	(gr_arc
 		(start 227.5 50)
 		(mid 229.267767 50.732233)
@@ -12014,8 +9912,8 @@
 		(uuid "d9fba7eb-8256-4623-a0d5-54f38ca6e493")
 	)
 	(gr_rect
-		(start 122.7 54.25)
-		(end 226.7 132.25)
+		(start 110.7 61.4)
+		(end 214.7 139.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -12024,9 +9922,69 @@
 		(layer "User.2")
 		(uuid "78684e9f-9831-44b4-a574-ce5e9eced846")
 	)
+	(gr_line
+		(start 38.45 74.9)
+		(end 78.45 74.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "d6c47eae-0f03-4c0e-aa7b-1b0865d9cd66")
+	)
+	(gr_line
+		(start 38.45 84.65)
+		(end 38.45 74.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "64478f76-09be-440a-ad76-3245bee5c12e")
+	)
+	(gr_line
+		(start 38.45 109.2)
+		(end 78.45 109.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "f9cfec02-4c99-434c-857c-0112e091f913")
+	)
+	(gr_line
+		(start 38.45 118.5)
+		(end 38.45 109.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "59bc2398-2171-46d8-a50d-497b0320d393")
+	)
+	(gr_line
+		(start 78.45 84.65)
+		(end 38.45 84.65)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "c6a24f42-981f-4368-a685-e2f55f5ce706")
+	)
+	(gr_line
+		(start 78.45 118.5)
+		(end 38.45 118.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "08054431-45ad-478f-a3b4-366b9150755c")
+	)
 	(gr_rect
-		(start 80.844804 90.605196)
-		(end 95.844804 101.605196)
+		(start 79.194804 74.105196)
+		(end 94.194804 85.105196)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -12036,8 +9994,8 @@
 		(uuid "b7994d01-c096-4b43-9992-338d056636c9")
 	)
 	(gr_rect
-		(start 80.844804 124.605196)
-		(end 95.844804 135.605196)
+		(start 79.194804 108.105196)
+		(end 94.194804 119.105196)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -12047,8 +10005,8 @@
 		(uuid "bd4c0dd4-9f57-4b82-a58b-c0c655ac8971")
 	)
 	(gr_rect
-		(start 95.844804 83.105196)
-		(end 225.844804 143.105196)
+		(start 94.194804 66.605196)
+		(end 224.194804 126.605196)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -12058,8 +10016,8 @@
 		(uuid "4cc3b475-937b-47b9-ac72-59774a07bb6a")
 	)
 	(gr_rect
-		(start 110.844804 88.105196)
-		(end 205.844804 138.105196)
+		(start 109.194804 71.605196)
+		(end 204.194804 121.605196)
 		(stroke
 			(width 0.1)
 			(type dash)
@@ -12069,8 +10027,28 @@
 		(uuid "2e0b4a76-5e5b-4656-978e-353207eeecf8")
 	)
 	(gr_line
-		(start 205.844804 88.105196)
-		(end 110.844804 138.105196)
+		(start 153.45 96.7)
+		(end 218.45 96.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "5d369363-6ab6-44e1-98e0-dcacc3838a63")
+	)
+	(gr_line
+		(start 155.95 96.7)
+		(end 88.45 96.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "8ceab8b7-0a8e-48ce-8301-0c0b5b590f4b")
+	)
+	(gr_line
+		(start 204.194804 71.605196)
+		(end 109.194804 121.605196)
 		(stroke
 			(width 0.1)
 			(type dash)
@@ -12079,8 +10057,8 @@
 		(uuid "6f70cf22-fd4e-4e86-a629-2ae0d8cbafc4")
 	)
 	(gr_line
-		(start 205.844804 138.105196)
-		(end 110.844804 88.105196)
+		(start 204.194804 121.605196)
+		(end 109.194804 71.605196)
 		(stroke
 			(width 0.1)
 			(type dash)
@@ -12089,8 +10067,8 @@
 		(uuid "d16c5a59-76d7-4472-8bd0-d6bf4f3e7306")
 	)
 	(gr_rect
-		(start 78.95 118.2)
-		(end 100.85 128)
+		(start 74.55 105.15)
+		(end 96.45 114.95)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -12100,8 +10078,8 @@
 		(uuid "cd148010-97a7-4f23-bb1f-89f42048bbf6")
 	)
 	(gr_rect
-		(start 89.85 96.5)
-		(end 189.85 129.5)
+		(start 85.45 83.45)
+		(end 185.45 116.45)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -12111,8 +10089,8 @@
 		(uuid "31af7b0b-cd81-481b-bdc8-a282718d3b45")
 	)
 	(gr_line
-		(start 89.85 129.5)
-		(end 189.85 96.5)
+		(start 85.45 116.45)
+		(end 185.45 83.45)
 		(stroke
 			(width 0.1)
 			(type dash)
@@ -12121,8 +10099,8 @@
 		(uuid "853fa9aa-a21b-4406-9e64-e03f623cbabe")
 	)
 	(gr_rect
-		(start 109.85 99.5)
-		(end 169.85 126.5)
+		(start 105.45 86.45)
+		(end 165.45 113.45)
 		(stroke
 			(width 0.1)
 			(type dash)
@@ -12132,8 +10110,8 @@
 		(uuid "6103d71c-380b-43ed-ab14-ebd6e96a6bb1")
 	)
 	(gr_line
-		(start 189.85 129.5)
-		(end 89.85 96.5)
+		(start 185.45 116.45)
+		(end 85.45 83.45)
 		(stroke
 			(width 0.1)
 			(type dash)
@@ -12141,59 +10119,30 @@
 		(layer "User.4")
 		(uuid "ae5e20f6-4dee-49fe-b3fb-a9d1247d4ca8")
 	)
-	(gr_line
-		(start 55.05 108.425)
-		(end 55.2 61)
+	(gr_rect
+		(start 53.1 53.6)
+		(end 95.1 92.6)
 		(stroke
-			(width 0.2)
-			(type solid)
+			(width 0.1)
+			(type default)
 		)
+		(fill no)
 		(layer "User.5")
-		(uuid "a3ab3a54-96fa-4d5d-8913-0b29e38997fd")
+		(uuid "b30ffc52-e739-43d4-8358-b5e40f668e72")
 	)
 	(gr_line
-		(start 55.2 61)
-		(end 92.45 61.025)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(layer "User.5")
-		(uuid "1f54ba2e-68be-43c1-b804-8ffff32928b9")
-	)
-	(gr_line
-		(start 92.45 61.025)
-		(end 92.45 108.425)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(layer "User.5")
-		(uuid "c7a426ef-932f-484c-b813-9bd184396968")
-	)
-	(gr_line
-		(start 92.45 108.425)
-		(end 55.05 108.425)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(layer "User.5")
-		(uuid "8f9b4d27-d564-41f2-9d9c-cdbf3f9eca10")
-	)
-	(gr_line
-		(start 81.5 82.4)
-		(end 221.5 132.337056)
+		(start 273.819804 16.144804)
+		(end 323.75686 156.144804)
 		(stroke
 			(width 0.1)
 			(type dash)
 		)
 		(layer "User.6")
-		(uuid "9d045ddb-ea09-44cd-820d-a2b4cd95d20f")
+		(uuid "ea561a61-c642-4ff6-8973-640b49670541")
 	)
 	(gr_rect
-		(start 81.5 82.4)
-		(end 221.5 132.337056)
+		(start 273.819804 16.144804)
+		(end 323.75686 156.144804)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -12202,31 +10151,19 @@
 		(layer "User.6")
 		(uuid "c49af46b-5e70-4f81-9f6c-e15386fc6dcd")
 	)
-	(gr_circle
-		(center 85 85.837056)
-		(end 82 85.837056)
+	(gr_line
+		(start 273.819804 156.144804)
+		(end 323.75686 16.144804)
 		(stroke
 			(width 0.1)
-			(type default)
+			(type dash)
 		)
-		(fill no)
 		(layer "User.6")
-		(uuid "56753d53-c3d2-4412-b2d7-b36b10b17d86")
-	)
-	(gr_circle
-		(center 85 128.837056)
-		(end 82 128.837056)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill no)
-		(layer "User.6")
-		(uuid "4f692de6-9acf-4344-a069-faf3cab03a8b")
+		(uuid "9d045ddb-ea09-44cd-820d-a2b4cd95d20f")
 	)
 	(gr_rect
-		(start 156.33 85.437056)
-		(end 165.29 96.337056)
+		(start 276.85686 72.354804)
+		(end 287.75686 81.314804)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -12236,8 +10173,8 @@
 		(uuid "fe68c26a-1c4e-42a4-ba30-5e9587d60057")
 	)
 	(gr_circle
-		(center 218 85.837056)
-		(end 215 85.837056)
+		(center 277.25686 19.644804)
+		(end 277.25686 22.644804)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -12247,8 +10184,19 @@
 		(uuid "d2fb352e-87e6-44e5-8442-484d221d66e7")
 	)
 	(gr_circle
-		(center 218 128.837056)
-		(end 215 128.837056)
+		(center 277.25686 152.644804)
+		(end 277.25686 155.644804)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "User.6")
+		(uuid "56753d53-c3d2-4412-b2d7-b36b10b17d86")
+	)
+	(gr_circle
+		(center 320.25686 19.644804)
+		(end 320.25686 22.644804)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -12257,54 +10205,59 @@
 		(layer "User.6")
 		(uuid "e297895c-d237-4015-9e7d-74633782676f")
 	)
-	(gr_line
-		(start 221.5 82.4)
-		(end 81.5 132.337056)
+	(gr_circle
+		(center 320.25686 152.644804)
+		(end 320.25686 155.644804)
 		(stroke
 			(width 0.1)
-			(type dash)
+			(type default)
 		)
+		(fill no)
 		(layer "User.6")
-		(uuid "ea561a61-c642-4ff6-8973-640b49670541")
+		(uuid "4f692de6-9acf-4344-a069-faf3cab03a8b")
 	)
-	(gr_text "EngineBoard\n"
-		(at 90.7 130 90)
-		(layer "F.SilkS")
-		(uuid "7c47ea42-b110-4f80-aea7-1977d862d5df")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
+	(gr_line
+		(start 53.6 121.3)
+		(end 53.6 142.3)
+		(stroke
+			(width 0.1)
+			(type default)
 		)
+		(layer "User.10")
+		(uuid "e83d4c31-18f9-4c4d-b692-bbb0165075ff")
 	)
-	(gr_text "EngineBoard\n"
-		(at 91.7 92.2 90)
-		(layer "F.SilkS")
-		(uuid "2c557a3f-ccbd-4c64-9738-be3c1e219a3a")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
+	(gr_line
+		(start 53.6 142.3)
+		(end 91.1 142.3)
+		(stroke
+			(width 0.1)
+			(type default)
 		)
+		(layer "User.10")
+		(uuid "13055bc7-d1af-4485-802b-7288f50d873e")
 	)
-	(gr_text "Vega"
-		(at 114.75 101.8 90)
-		(layer "F.SilkS")
-		(uuid "b28de3f0-61f3-4a6c-b601-7fd55ad276a0")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
+	(gr_line
+		(start 91.1 121.3)
+		(end 53.6 121.3)
+		(stroke
+			(width 0.1)
+			(type default)
 		)
+		(layer "User.10")
+		(uuid "7f3e96e2-92c9-4142-b0f0-532a56157edd")
+	)
+	(gr_line
+		(start 91.1 142.3)
+		(end 91.1 121.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.10")
+		(uuid "f75bd9b2-e150-47b6-b725-6526f7ad4998")
 	)
 	(gr_text "FlightComp"
-		(at 116.094804 92.655196 90)
+		(at 105.85 76.75 0)
 		(layer "F.SilkS")
 		(uuid "778dab4c-af63-4321-896d-a372a1b86faa")
 		(effects
@@ -12316,7 +10269,7 @@
 		)
 	)
 	(gr_text "FlightComp"
-		(at 116.794804 139.255196 90)
+		(at 106.35 127.2 0)
 		(layer "F.SilkS")
 		(uuid "48183cc2-e5ed-486d-8f1f-197fee01bca6")
 		(effects
@@ -12327,32 +10280,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Vega"
-		(at 175.05 101.2 90)
-		(layer "F.SilkS")
-		(uuid "0745a598-53d7-4502-84f5-2d5e9d881f60")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "Vega"
-		(at 175.05 128.4 90)
-		(layer "F.SilkS")
-		(uuid "a87f3bc4-7b9f-47be-94bd-63cdd70195ec")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "Flightcomp\n"
-		(at 200.7 140.2 90)
+		(at 200.9 127.05 0)
 		(layer "F.SilkS")
 		(uuid "44cdea21-4698-43a3-9367-d9a23bf82c1c")
 		(effects
@@ -12364,7 +10293,7 @@
 		)
 	)
 	(gr_text "FLightComp"
-		(at 201.089608 92.05 90)
+		(at 201.45 77.4 0)
 		(layer "F.SilkS")
 		(uuid "b963fe49-ed89-4efa-a1b2-03a7b618e878")
 		(effects
@@ -12375,8 +10304,56 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Vega"
+		(at 110.35 88.75 90)
+		(layer "F.SilkS")
+		(uuid "b28de3f0-61f3-4a6c-b601-7fd55ad276a0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Vega"
+		(at 170.65 88.15 90)
+		(layer "F.SilkS")
+		(uuid "0745a598-53d7-4502-84f5-2d5e9d881f60")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Vega"
+		(at 170.65 115.35 90)
+		(layer "F.SilkS")
+		(uuid "a87f3bc4-7b9f-47be-94bd-63cdd70195ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "EngineBoard\n"
-		(at 221.5 98.45 90)
+		(at 283.619804 145.944804 180)
+		(layer "F.SilkS")
+		(uuid "2c557a3f-ccbd-4c64-9738-be3c1e219a3a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "EngineBoard\n"
+		(at 289.869804 16.144804 180)
 		(layer "F.SilkS")
 		(uuid "d5ebc045-2852-4f05-922c-fe6c13a3b24a")
 		(effects
@@ -12388,9 +10365,21 @@
 		)
 	)
 	(gr_text "EngineBoard\n"
-		(at 221.5 125.25 90)
+		(at 316.669804 16.144804 180)
 		(layer "F.SilkS")
 		(uuid "6ddc697f-fa22-4241-aadd-a61b03342601")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "EngineBoard\n"
+		(at 321.419804 146.944804 180)
+		(layer "F.SilkS")
+		(uuid "7c47ea42-b110-4f80-aea7-1977d862d5df")
 		(effects
 			(font
 				(size 1 1)
@@ -12412,7 +10401,7 @@
 		)
 	)
 	(gr_text "Mounting"
-		(at 54.5 54.4 0)
+		(at 69.5 52.15 0)
 		(layer "F.SilkS")
 		(uuid "0accefc9-cd57-49f2-85e5-b629d7e1fedf")
 		(effects
@@ -12424,7 +10413,7 @@
 		)
 	)
 	(gr_text "status leds"
-		(at 143.75 76.3 0)
+		(at 132.25 83.55 0)
 		(layer "F.SilkS")
 		(uuid "8a12049a-904c-4989-8e27-5f384f5d929d")
 		(effects
@@ -12436,7 +10425,7 @@
 		)
 	)
 	(gr_text "1 2 3\n"
-		(at 145.7 82.1 0)
+		(at 134.2 89.35 0)
 		(layer "F.SilkS")
 		(uuid "78493963-5a94-4eff-a3d2-f752f96e0e5c")
 		(effects
@@ -12472,7 +10461,7 @@
 		)
 	)
 	(gr_text "4 3 2 1"
-		(at 148.8 73.15 0)
+		(at 137.3 80.4 0)
 		(layer "F.SilkS")
 		(uuid "7baafc19-07a8-4979-bce9-4e5e3c3b26bf")
 		(effects
@@ -12484,7 +10473,7 @@
 		)
 	)
 	(gr_text "charge leds"
-		(at 148.9 68.95 0)
+		(at 137.4 76.2 0)
 		(layer "F.SilkS")
 		(uuid "abd116de-a374-4b6b-b0ca-3ed392f6d7cd")
 		(effects
@@ -12496,7 +10485,7 @@
 		)
 	)
 	(gr_text "RAPID Structure PCB v2"
-		(at 56 100 90)
+		(at 65.5 81 90)
 		(layer "F.SilkS")
 		(uuid "50213a0b-d742-4a08-8ac7-7fdbec36abe6")
 		(effects
@@ -12508,8 +10497,8 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "Batteryboard"
-		(at 210.494804 122.855196 0)
+	(gr_text "powerboard"
+		(at 191.2 134.9 0)
 		(layer "B.SilkS")
 		(uuid "ce6934e5-b67e-42d9-a099-66d039a66fa0")
 		(effects
@@ -12556,21 +10545,44 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Batteryboard (Back)\n"
-		(at 165.7 62.85 0)
+	(gr_text "Powerboard (Back)"
+		(at 157.2 67.3 0)
 		(layer "User.2")
-		(uuid "422d5cac-4ea8-4339-86dd-a7f8165cfcc2")
+		(uuid "151d86b3-52aa-47a3-9c09-bea35da0ea73")
 		(effects
 			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "flightcomp antenna"
+		(at 42.75 80.05 0)
+		(layer "User.3")
+		(uuid "f88c1245-e9c3-4b8e-b400-7b73617d5241")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "flightcomp antenna"
+		(at 43.25 113.95 0)
+		(layer "User.3")
+		(uuid "9f29b159-f9dd-4d0c-a13f-1c2af2604862")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
 	)
 	(gr_text "Flight Computer"
-		(at 119.594804 108.355196 0)
+		(at 119.055196 89.955196 0)
 		(layer "User.3")
 		(uuid "52206897-b1f1-41d1-ada4-f193af81641e")
 		(effects
@@ -12583,7 +10595,7 @@
 		)
 	)
 	(gr_text "Vega"
-		(at 94.15 107.4 0)
+		(at 89.75 94.35 0)
 		(layer "User.4")
 		(uuid "2a087050-25f5-46f7-850c-47a6232430be")
 		(effects
@@ -12596,7 +10608,7 @@
 		)
 	)
 	(gr_text "Arming Board (Back)\n"
-		(at 70 79.5 0)
+		(at 76.78542 80.02327 90)
 		(layer "User.5")
 		(uuid "fe40bc15-064b-4855-8b98-0d9f7eabe82e")
 		(effects
@@ -12608,7 +10620,7 @@
 		)
 	)
 	(gr_text "Engine Board"
-		(at 158.4 115.868528 0)
+		(at 307.288332 79.244804 90)
 		(layer "User.6")
 		(uuid "c5fe4298-b858-4891-9c9d-813e07ad3217")
 		(effects
@@ -12620,63 +10632,40 @@
 			(justify left bottom)
 		)
 	)
-	(segment
-		(start 191.35 135.1)
-		(end 191.5 135.1)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "")
-		(uuid "0af97767-2cec-42aa-b8cc-e5370b0f0229")
-	)
-	(segment
-		(start 191.06325 132.39925)
-		(end 191.0825 132.38)
-		(width 0.5)
-		(layer "B.Cu")
-		(net "")
-		(uuid "4bb7b4d4-0f04-46e0-914e-4af055f4f8dc")
-	)
-	(segment
-		(start 189 132.75)
-		(end 191.35 135.1)
-		(width 0.5)
-		(layer "B.Cu")
-		(net "")
-		(uuid "9cc8b748-fb20-41cb-877b-d3bf5020f46f")
-	)
-	(group ""
-		(uuid "a29f53fc-9148-48aa-a428-cc3ee18bef92")
-		(members "0875edea-980e-4f43-82c7-5184e2b43308" "096c41bf-32f7-4d5e-95b0-294f02e4e2d8"
-			"78493963-5a94-4eff-a3d2-f752f96e0e5c" "7baafc19-07a8-4979-bce9-4e5e3c3b26bf"
-			"8a12049a-904c-4989-8e27-5f384f5d929d" "abd116de-a374-4b6b-b0ca-3ed392f6d7cd"
-			"bae2f98f-2cda-492d-96b6-1b5f2cb75ff7"
+	(gr_text "Switch cutout"
+		(at 59.15 137.75 90)
+		(layer "User.10")
+		(uuid "16cf0bf2-6240-427e-bbc0-fb6e6c358b3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
 		)
 	)
 	(group ""
-		(uuid "096c41bf-32f7-4d5e-95b0-294f02e4e2d8")
-		(members "07c6dc98-5094-4a75-8209-5377d1b03c07" "1730e62c-4ba9-4765-8edf-ada7c38d832a"
-			"422d5cac-4ea8-4339-86dd-a7f8165cfcc2" "78684e9f-9831-44b4-a574-ce5e9eced846"
+		(uuid "b1014aad-2646-49cd-9516-d05477415c61")
+		(members "02a77658-7001-49ee-b99d-1dd3bfc37019" "b0c9fb99-6f87-422a-a9f6-71ef49c0c270")
+	)
+	(group ""
+		(uuid "02a77658-7001-49ee-b99d-1dd3bfc37019")
+		(members "07c6dc98-5094-4a75-8209-5377d1b03c07" "151d86b3-52aa-47a3-9c09-bea35da0ea73"
+			"1730e62c-4ba9-4765-8edf-ada7c38d832a" "78684e9f-9831-44b4-a574-ce5e9eced846"
 			"aa4eb529-bd55-43cd-8369-051e236bd538" "ce6934e5-b67e-42d9-a099-66d039a66fa0"
 			"fba8bdc2-a275-4680-84fe-895076e8c77a"
 		)
 	)
 	(group ""
-		(uuid "d9cadf36-645a-4b72-ad41-c03b7cf9b833")
-		(members "13db7d82-5b82-4ac8-aa19-3cd7af00a855" "4674b666-a464-4676-91f8-9fd6cde16ed7"
-			"907deee1-f680-4716-9d14-b59b21870e58" "deba9f18-7eba-4a9b-b326-42d2c2d944d0"
-			"fe40bc15-064b-4855-8b98-0d9f7eabe82e"
+		(uuid "85f41d90-fae2-47b3-a42f-3dc5518aa39a")
+		(members "13db7d82-5b82-4ac8-aa19-3cd7af00a855" "2f15fe5b-2fd6-4672-8286-11806a8adac4"
+			"907deee1-f680-4716-9d14-b59b21870e58" "b30ffc52-e739-43d4-8358-b5e40f668e72"
+			"deba9f18-7eba-4a9b-b326-42d2c2d944d0" "fe40bc15-064b-4855-8b98-0d9f7eabe82e"
 		)
 	)
 	(group ""
 		(uuid "559b45bc-0b2b-4130-b01a-68ad7c935ec3")
 		(members "04b0e748-0dc6-4410-b3ea-6d6f0d8e5c96" "44cdea21-4698-43a3-9367-d9a23bf82c1c")
-	)
-	(group ""
-		(uuid "9725dcbc-64d1-46f9-9f1b-cfd720ef8400")
-		(members "48183cc2-e5ed-486d-8f1f-197fee01bca6" "52206897-b1f1-41d1-ada4-f193af81641e"
-			"559b45bc-0b2b-4130-b01a-68ad7c935ec3" "778dab4c-af63-4321-896d-a372a1b86faa"
-			"b963fe49-ed89-4efa-a1b2-03a7b618e878"
-		)
 	)
 	(group ""
 		(uuid "4e497e03-19bc-42b8-ad85-c39fb2935cbe")
@@ -12686,19 +10675,6 @@
 			"a87f3bc4-7b9f-47be-94bd-63cdd70195ec" "ae5e20f6-4dee-49fe-b3fb-a9d1247d4ca8"
 			"b28de3f0-61f3-4a6c-b601-7fd55ad276a0" "cd148010-97a7-4f23-bb1f-89f42048bbf6"
 			"ceca6497-f9ed-4e9c-8b98-fcda0f9bd1eb" "eea70c65-6bce-4639-8fe2-7c7a8b3d895a"
-		)
-	)
-	(group ""
-		(uuid "1365cc56-6d0a-42d8-a9e2-c130ddb289e9")
-		(members "24524f9f-e8b6-46c7-9ecc-cff17c7ae964" "2c557a3f-ccbd-4c64-9738-be3c1e219a3a"
-			"4f692de6-9acf-4344-a069-faf3cab03a8b" "56753d53-c3d2-4412-b2d7-b36b10b17d86"
-			"6ddc697f-fa22-4241-aadd-a61b03342601" "7c47ea42-b110-4f80-aea7-1977d862d5df"
-			"9d045ddb-ea09-44cd-820d-a2b4cd95d20f" "c49af46b-5e70-4f81-9f6c-e15386fc6dcd"
-			"c5fe4298-b858-4891-9c9d-813e07ad3217" "cb92eb1d-5c3f-467a-864a-414192c10d5c"
-			"d2fb352e-87e6-44e5-8442-484d221d66e7" "d5ebc045-2852-4f05-922c-fe6c13a3b24a"
-			"d6aa95ab-cf39-4c12-b7af-9032eedf2696" "e297895c-d237-4015-9e7d-74633782676f"
-			"ea561a61-c642-4ff6-8973-640b49670541" "f95d2547-ce9d-4fd0-8ad3-a505aa94bd90"
-			"fe68c26a-1c4e-42a4-ba30-5e9587d60057"
 		)
 	)
 	(group ""
@@ -12715,9 +10691,39 @@
 		)
 	)
 	(group ""
-		(uuid "4674b666-a464-4676-91f8-9fd6cde16ed7")
-		(members "1f54ba2e-68be-43c1-b804-8ffff32928b9" "8f9b4d27-d564-41f2-9d9c-cdbf3f9eca10"
-			"a3ab3a54-96fa-4d5d-8913-0b29e38997fd" "c7a426ef-932f-484c-b813-9bd184396968"
+		(uuid "b0c9fb99-6f87-422a-a9f6-71ef49c0c270")
+		(members "0875edea-980e-4f43-82c7-5184e2b43308" "78493963-5a94-4eff-a3d2-f752f96e0e5c"
+			"7baafc19-07a8-4979-bce9-4e5e3c3b26bf" "8a12049a-904c-4989-8e27-5f384f5d929d"
+			"abd116de-a374-4b6b-b0ca-3ed392f6d7cd" "bae2f98f-2cda-492d-96b6-1b5f2cb75ff7"
+		)
+	)
+	(group ""
+		(uuid "1365cc56-6d0a-42d8-a9e2-c130ddb289e9")
+		(members "2c557a3f-ccbd-4c64-9738-be3c1e219a3a" "4f692de6-9acf-4344-a069-faf3cab03a8b"
+			"56753d53-c3d2-4412-b2d7-b36b10b17d86" "6ddc697f-fa22-4241-aadd-a61b03342601"
+			"7c47ea42-b110-4f80-aea7-1977d862d5df" "9d045ddb-ea09-44cd-820d-a2b4cd95d20f"
+			"c49af46b-5e70-4f81-9f6c-e15386fc6dcd" "c5fe4298-b858-4891-9c9d-813e07ad3217"
+			"d2fb352e-87e6-44e5-8442-484d221d66e7" "d5ebc045-2852-4f05-922c-fe6c13a3b24a"
+			"e297895c-d237-4015-9e7d-74633782676f" "ea561a61-c642-4ff6-8973-640b49670541"
+			"fe68c26a-1c4e-42a4-ba30-5e9587d60057"
+		)
+	)
+	(group ""
+		(uuid "2c4d1c5e-0530-46b5-abef-edfebb316463")
+		(members "11d387b6-1086-464b-9b10-79f238d12f77" "14e43e45-85bb-4792-9b58-1240dada552f"
+			"28f1926d-18d3-43e6-b0df-ad3a02a13691" "5ea76422-b26a-4e2a-afeb-32f084b1f65a"
+			"8103569a-8e93-45f7-8d4e-e76cba37f5b2" "cd37a5b9-8e95-43ea-97be-43d0b73b79c9"
+		)
+	)
+	(group ""
+		(uuid "b28aba37-0321-4790-8336-8cbdedabdb47")
+		(members "5d369363-6ab6-44e1-98e0-dcacc3838a63" "8ceab8b7-0a8e-48ce-8301-0c0b5b590f4b")
+	)
+	(group ""
+		(uuid "14e43e45-85bb-4792-9b58-1240dada552f")
+		(members "13055bc7-d1af-4485-802b-7288f50d873e" "16cf0bf2-6240-427e-bbc0-fb6e6c358b3d"
+			"7f3e96e2-92c9-4142-b0f0-532a56157edd" "e83d4c31-18f9-4c4d-b692-bbb0165075ff"
+			"f75bd9b2-e150-47b6-b725-6526f7ad4998"
 		)
 	)
 	(embedded_fonts no)

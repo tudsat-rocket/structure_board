@@ -139,16 +139,6 @@
 		)
 		(uuid "0696e918-df2d-4ae1-a808-b1d01a29f536")
 	)
-	(text "Mounting EB\n"
-		(exclude_from_sim no)
-		(at 203.2 70.358 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "16fac485-da96-410e-b43b-0e7cbe46ba23")
-	)
 	(text "Mounting SB"
 		(exclude_from_sim no)
 		(at 234.442 49.784 0)
@@ -194,10 +184,6 @@
 		(uuid "09f00516-9a3e-4477-a1b7-1ef75a524a37")
 	)
 	(no_connect
-		(at 214.63 78.74)
-		(uuid "0edeecfb-52ce-4333-9287-63c535bcbc0e")
-	)
-	(no_connect
 		(at 200.66 39.37)
 		(uuid "1cb09d94-3b55-4487-a588-e10df93c8929")
 	)
@@ -210,10 +196,6 @@
 		(uuid "337e9bf8-0973-47c2-bda4-7e08f42bfb97")
 	)
 	(no_connect
-		(at 199.39 78.74)
-		(uuid "3d6cbc7b-d7e1-42e5-bd90-acdb4b9dc1e7")
-	)
-	(no_connect
 		(at 238.76 58.42)
 		(uuid "4daf924a-bfd5-4bce-b550-a4c0be38ff1b")
 	)
@@ -224,10 +206,6 @@
 	(no_connect
 		(at 234.95 78.74)
 		(uuid "618f2bf8-02c7-4b64-9f09-e7702b1c0b61")
-	)
-	(no_connect
-		(at 222.25 78.74)
-		(uuid "626e2b4b-1aa3-4ec5-933b-e81d70b97a3e")
 	)
 	(no_connect
 		(at 242.57 78.74)
@@ -264,10 +242,6 @@
 	(no_connect
 		(at 254 58.42)
 		(uuid "de614422-3c07-48cf-a816-1e752374c777")
-	)
-	(no_connect
-		(at 207.01 78.74)
-		(uuid "e7d89441-4536-4742-8c29-d69ce7602cc0")
 	)
 	(no_connect
 		(at 232.41 58.42)
@@ -603,86 +577,6 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 214.63 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c9613a1-11b6-4b20-bc31-ce9115519554")
-		(property "Reference" "H18"
-			(at 217.17 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 217.17 76.1999 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 214.63 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 214.63 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e8a073e8-0d94-4627-a112-2037bff7ba43")
-		)
-		(instances
-			(project "Structure_PCB"
-				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
-					(reference "H18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
 		(at 255.27 36.83 0)
 		(unit 1)
 		(body_style 1)
@@ -1003,86 +897,6 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 207.01 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "761002be-0129-4261-aed6-815f3ef2d43f")
-		(property "Reference" "H17"
-			(at 209.55 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 209.55 76.1999 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 207.01 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 207.01 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 207.01 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "29f18e63-a804-4e50-a6df-d3c2b68862d6")
-		)
-		(instances
-			(project "Structure_PCB"
-				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
-					(reference "H17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
 		(at 246.38 55.88 0)
 		(unit 1)
 		(body_style 1)
@@ -1156,166 +970,6 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "H11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 199.39 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "787c0307-d583-47c5-8b99-f61b437e9330")
-		(property "Reference" "H16"
-			(at 201.93 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 201.93 76.1999 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 199.39 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 199.39 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c1d0b074-1fac-4b8f-9a2b-c8ba968f2428")
-		)
-		(instances
-			(project "Structure_PCB"
-				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
-					(reference "H16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 222.25 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91e36894-67f4-4eb9-826f-2a520dbab66f")
-		(property "Reference" "H19"
-			(at 224.79 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 224.79 76.1999 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 222.25 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 222.25 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d0064863-d2b7-46fc-89bf-9ab8a5e6c1bd")
-		)
-		(instances
-			(project "Structure_PCB"
-				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
-					(reference "H19")
 					(unit 1)
 				)
 			)
@@ -1476,6 +1130,86 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 255.27 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aeb5e7e2-f4a8-4621-af1f-d6aa31ac93a5")
+		(property "Reference" "H23"
+			(at 257.81 73.6599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 257.81 76.1999 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
+			(at 255.27 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 255.27 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f78c85fe-fbf9-4ee4-bdf2-25e640749145")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "H23")
 					(unit 1)
 				)
 			)
