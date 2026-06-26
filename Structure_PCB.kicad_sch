@@ -1010,7 +1010,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 			(at 242.57 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1170,7 +1170,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 			(at 255.27 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1410,7 +1410,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 			(at 234.95 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1650,7 +1650,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
 			(at 250.19 76.2 0)
 			(hide yes)
 			(show_name no)
