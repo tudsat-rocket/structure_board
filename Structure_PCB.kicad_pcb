@@ -11714,30 +11714,6 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "MB Mounting 4 holes 50x95"
-		(at 34.6 21.5 0)
-		(layer "Cmts.User")
-		(uuid "28ff8df4-1dc0-4741-b939-45191155307d")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "PB Mounting 4 holes 72x115 tbd!"
-		(at 34.8 24.2 0)
-		(layer "Cmts.User")
-		(uuid "359b625d-82c1-4590-8d5a-737886832a59")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "Powerboard (Back)"
 		(at 151.4 63.8 0)
 		(layer "User.2")
