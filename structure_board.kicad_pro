@@ -258,7 +258,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "2"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -507,7 +507,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Structure_PCB.kicad_pro",
+    "filename": "structure_board.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -674,8 +674,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Structure_PCB.kicad_sch",
-        "name": "Structure_PCB",
+        "filename": "structure_board.kicad_sch",
+        "name": "structure_board",
         "uuid": "6b5e11c5-042c-4871-8828-d1d1e7f237a0"
       }
     ],
@@ -685,7 +685,7 @@
   "sheets": [
     [
       "6b5e11c5-042c-4871-8828-d1d1e7f237a0",
-      "Structure_PCB"
+      "structure_board"
     ]
   ],
   "text_variables": {},
